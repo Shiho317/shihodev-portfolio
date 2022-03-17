@@ -1,11 +1,14 @@
+import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
+import { Wrapper } from "./Landing.style";
 
 const Landing = () => {
   return(
-    <div>
+    <Wrapper>
       <Header/>
       <h1>hello</h1>
-    </div>
+      <Footer/>
+    </Wrapper>
   )
 };
 

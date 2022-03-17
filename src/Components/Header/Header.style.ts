@@ -10,7 +10,7 @@ justify-content: space-between;
 align-items: center;
 
 .logo-wrapper{
-
+  cursor: pointer;
 }
 
 .logo-wrapper img{
