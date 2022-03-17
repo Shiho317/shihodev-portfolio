@@ -1,9 +1,10 @@
+import { Wrapper } from "./Footer.style";
 
 const Footer = () => {
   return(
-    <div>
-
-    </div>
+    <Wrapper>
+      <p>Copyright ©2022. ShihoN.Dev All Rights Reserved.</p>
+    </Wrapper>
   )
 };
 
