@@ -6,7 +6,7 @@ const Landing = () => {
   return(
     <Wrapper>
       <Header/>
-      <h1>hello</h1>
+      <h1>hellooo</h1>
       <Footer/>
     </Wrapper>
   )
