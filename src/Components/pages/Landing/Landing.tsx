@@ -4,7 +4,7 @@ const Landing = () => {
   return(
     <div>
       <Header/>
-      <h1>hello</h1>
+      <h1>hellooo</h1>
     </div>
   )
 };
