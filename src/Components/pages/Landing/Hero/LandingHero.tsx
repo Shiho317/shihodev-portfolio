@@ -5,6 +5,8 @@ import { BiCodeAlt } from 'react-icons/bi';
 import { BsLayoutWtf } from 'react-icons/bs';
 import { FaReact } from 'react-icons/fa';
 import { SiMongodb, SiExpress, SiNodedotjs } from 'react-icons/si';
+import SmileMemoji from '../../../../assets/images/memoji-smile.png';
+import WinkMemoji from '../../../../assets/images/memoji-wink.png';
 
 const LandingHero = () => {
 
@@ -25,10 +27,12 @@ const LandingHero = () => {
           <BubbleOne>
             <div className="card">
               <div className="front">
-                <h3>Shiho Nagano</h3>
+                <h3 className="gradient-font">"Hello! I am"</h3>
               </div>
               <div className="back">
-                <div className="icon">aaaaa</div>
+                
+                <img src={SmileMemoji} alt="smile" />
+                <h3>SHIHO</h3>
               </div>
             </div>
           </BubbleOne>

@@ -55,6 +55,7 @@ export const NavButton = styled.div`
     & li{
       list-style: none;
       font-size: 1.3rem;
+      font-weight: 600;
       transition: all 0.3s ease;
 
       &:hover{
@@ -74,3 +75,4 @@ export const NavButton = styled.div`
     }
   }
 `
+

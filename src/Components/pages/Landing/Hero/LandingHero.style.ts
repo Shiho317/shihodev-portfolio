@@ -61,6 +61,12 @@ export const BubbleOne = styled.div`
     align-items: center;
     justify-content: center;
     backface-visibility: hidden;
+
+    .gradient-font{
+      background: linear-gradient(to bottom, #2a5470, #4c4177);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   .back{
@@ -73,14 +79,16 @@ export const BubbleOne = styled.div`
     border-radius: 30% 70% 70% 30% / 60% 40% 60% 40%;
     transform-style: preserve-3d;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 1rem;
     backface-visibility: hidden;
     transform: rotateX(180deg);
+    
 
-    .icon{
-      font-size: 3rem;
-      color: white;
+    & img{
+      width: 10rem;
       transform: translateZ(60px);
     }
   }
