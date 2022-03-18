@@ -1,23 +1,98 @@
-import { Wrapper } from "./LandingHero.style";
+import { useState } from "react";
+import { Eye, BubbleOne, BubbleTwo, Eyeball, HeroWrapper, Owl, OwlEyes, Bubble, BubbleThree, BubbleFour, BubbleFive } from "./LandingHero.style";
 import owl from '../../../../assets/images/owl.svg';
+import { BiCodeAlt } from 'react-icons/bi';
+import { BsLayoutWtf } from 'react-icons/bs';
+import { FaReact } from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiNodedotjs } from 'react-icons/si';
 
 const LandingHero = () => {
+
+  const [ mouseX, setMouseX ] = useState(0);
+  const [ mouseY, setMouseY ] = useState(0);
+
+  const onMouseMove = (e: any) => {
+    setMouseX(e.screenX)
+    setMouseY(e.screenY)
+  }
+
+  let eyeX = mouseX * 90 / window.innerWidth;
+  let eyeY = mouseY * 90 / window.innerHeight;
+
   return(
-    <Wrapper>
-      <div className="owl-img">
-        <div className="eyes">
-          <div className="left-eye">
-            <div className="eyeball"></div>
-          </div>
-          <div className="right-eye">
-            <div className="eyeball"></div>
-          </div>
-        </div>
-        <img src={owl} alt="owl" />
-      </div>
-      <div className="branch">
-      </div>
-    </Wrapper>
+      <HeroWrapper onMouseMove={(e) => onMouseMove(e)}>
+        <Bubble>
+          <BubbleOne>
+            <div className="card">
+              <div className="front">
+                <h3>Shiho Nagano</h3>
+              </div>
+              <div className="back">
+                <div className="icon">aaaaa</div>
+              </div>
+            </div>
+          </BubbleOne>
+          <BubbleTwo>
+            <div className="card">
+              <div className="front">
+                <h4>Front-end developer</h4>
+              </div>
+              <div className="back">
+                <div className="icon"><BiCodeAlt/></div>
+              </div>
+            </div>
+          </BubbleTwo>
+          <BubbleThree>
+            <div className="card">
+              <div className="front">
+                <h4>Web designer</h4>
+              </div>
+              <div className="back">
+                <div className="icon"><BsLayoutWtf/></div>
+              </div>
+            </div>
+          </BubbleThree>
+          <BubbleFour>
+            <div className="card">
+              <div className="front">
+                <h4>React developer</h4>
+              </div>
+              <div className="back">
+                <div className="icon"><FaReact/></div>
+              </div>
+            </div>
+          </BubbleFour>
+          <BubbleFive>
+            <div className="card">
+              <div className="front">
+                <h4>MERN stack developer</h4>
+              </div>
+              <div className="back">
+                <div className="icons">
+                  <SiMongodb/> 
+                  <SiExpress/>
+                  <FaReact/>
+                  <SiNodedotjs/>
+                </div>
+              </div>
+            </div>
+          </BubbleFive>
+        </Bubble>
+        <Owl>
+          <OwlEyes>
+            <Eye>
+              <Eyeball style={{left: `${eyeX}%`, top: `${eyeY}%`, transform: `translate(-${eyeX}%, -${eyeY}%)`}}>
+              </Eyeball>
+            </Eye>
+            <Eye>
+              <Eyeball style={{left: `${eyeX}%`, top: `${eyeY}%`, transform: `translate(-${eyeX}%, -${eyeY}%)`}}>
+              </Eyeball>
+            </Eye>
+          </OwlEyes>
+          <img src={owl} alt="owl" />
+        </Owl>
+        <div className="branch"></div>
+      </HeroWrapper>
   )
 };
 

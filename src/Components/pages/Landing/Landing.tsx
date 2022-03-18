@@ -1,15 +1,19 @@
 import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
 import LandingHero from "./Hero/LandingHero";
-import { Wrapper } from "./Landing.style";
+import { LandingWrapper } from "./Landing.style";
+import { ThemeProvider } from "styled-components";
+import { theme } from "../../../styles/Theme";
 
 const Landing = () => {
   return(
-    <Wrapper>
-      <Header/>
-      <LandingHero/>
-      <Footer/>
-    </Wrapper>
+    <ThemeProvider theme={theme}>
+      <LandingWrapper>
+        <Header/>
+        <LandingHero/>
+        <Footer/>
+      </LandingWrapper>
+    </ThemeProvider>
   )
 };
 
