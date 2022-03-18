@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const HeaderWrapper = styled.div`
 width: 100vw;
 height: 5rem;
 padding: 0 3rem;
-background-color: #ecb390;
+background-color: ${props => props.theme.color.orange};
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -16,36 +16,6 @@ align-items: center;
 
 .logo-wrapper img{
   width: 3.5rem;
-}
-
-.header-nav{
-  flex: 1;
-}
-
-.header-nav ul {
-  display: flex;
-  gap: 2rem;
-}
-
-.header-nav li{
-  list-style: none;
-  font-size: 1.3rem;
-  transition: all 0.3s ease;
-}
-
-.header-nav li:hover{
-  transform: translateY(-4px);
-}
-
-.header-nav a{
-  color: #f5eedc;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.header-nav a:hover{
-  color: #dd4a48;
 }
 
 .media-icons{
@@ -73,5 +43,34 @@ align-items: center;
   transform: translateY(-4px);
   background-color: #c0d8c0;
 }
+`
 
+export const NavButton = styled.div`
+  flex: 1;
+  
+  & ul{
+    display: flex;
+    gap: 2rem;
+
+    & li{
+      list-style: none;
+      font-size: 1.3rem;
+      transition: all 0.3s ease;
+
+      &:hover{
+        transform: translateY(-4px);
+      }
+    }
+  }
+
+  & a{
+    color: ${props => props.theme.color.yellow};
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover{
+      color: ${props => props.theme.color.red};
+    }
+  }
 `

@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-background-color: #f5eedc;
+export const LandingWrapper = styled.div`
+background-color: ${props => props.theme.color.yellow};
 `
