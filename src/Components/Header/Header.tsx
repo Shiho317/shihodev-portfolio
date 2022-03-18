@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HeaderWrapper, NavButton } from "./Header.style";
+import { HeaderWrapper, Icons, NavButton } from "./Header.style";
 import LogoSvg from "./Logo.svg";
 import { SiDiscord } from 'react-icons/si';
 import { FiLinkedin, FiGithub, FiMail } from 'react-icons/fi';
@@ -34,7 +34,7 @@ const Header = () => {
             </li>
           </ul>
         </NavButton>
-        <div className="media-icons">
+        <Icons>
           <div className="icons-wrap">
             <FiLinkedin/>
           </div>
@@ -47,7 +47,7 @@ const Header = () => {
           <div className="icons-wrap">
             <FiMail/>
           </div>
-        </div>
+        </Icons>
       </HeaderWrapper>
   )
 };

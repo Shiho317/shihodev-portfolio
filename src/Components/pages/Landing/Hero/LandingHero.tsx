@@ -6,7 +6,6 @@ import { BsLayoutWtf } from 'react-icons/bs';
 import { FaReact } from 'react-icons/fa';
 import { SiMongodb, SiExpress, SiNodedotjs } from 'react-icons/si';
 import SmileMemoji from '../../../../assets/images/memoji-smile.png';
-import WinkMemoji from '../../../../assets/images/memoji-wink.png';
 
 const LandingHero = () => {
 
