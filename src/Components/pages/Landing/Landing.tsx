@@ -4,6 +4,7 @@ import LandingHero from "./Hero/LandingHero";
 import { LandingWrapper } from "./Landing.style";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../../styles/Theme";
+import LandingWork from "./Work/LandingWork";
 
 const Landing = () => {
   return(
@@ -11,6 +12,7 @@ const Landing = () => {
       <LandingWrapper>
         <Header/>
         <LandingHero/>
+        <LandingWork/>
         <Footer/>
       </LandingWrapper>
     </ThemeProvider>

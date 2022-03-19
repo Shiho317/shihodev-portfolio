@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderWrapper = styled.div`
+  position: sticky;
+  top: 0;
   width: 100vw;
   height: 5rem;
   padding: 0 3rem;
@@ -8,6 +10,7 @@ export const HeaderWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 99;
 
   & .logo-wrapper{
       flex: 1;

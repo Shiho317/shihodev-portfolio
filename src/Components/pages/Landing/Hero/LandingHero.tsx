@@ -26,7 +26,7 @@ const LandingHero = () => {
           <BubbleOne>
             <div className="card">
               <div className="front">
-                <h3 className="gradient-font">"Hello! I am"</h3>
+                <h3 className="gradient-font">&ldquo;Hello! I am&rdquo;</h3>
               </div>
               <div className="back">
                 
