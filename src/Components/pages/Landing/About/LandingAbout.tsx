@@ -14,7 +14,7 @@ const LandingAbout = () => {
         </div>
         <div className="to-about-btn">
           <h3>\ Interested in ME?? Let me tell you about me more!! /</h3>
-          <button>&lt;About Me/&gt;</button>
+          <button>ABOUT ME</button>
         </div>
       </DetailsAboutMe>
     </AboutWrapper>

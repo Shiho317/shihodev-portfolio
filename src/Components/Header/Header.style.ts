@@ -42,13 +42,13 @@ export const NavButton = styled.div`
   }
 
   & a{
-    color: ${props => props.theme.color.yellow};
+    color: ${props => props.theme.color.blue};
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s ease;
 
     &:hover{
-      color: ${props => props.theme.color.red};
+      color: ${props => props.theme.color.grey};
     }
   }
 `
@@ -62,19 +62,19 @@ export const Icons = styled.div`
   & .icons-wrap{
     width: 2.3rem;
     height: 2.3rem;
-    border: 2px solid ${props => props.theme.color.yellow};
+    border: 2px solid ${props => props.theme.color.blue};
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: ${props => props.theme.color.yellow};
+    color: ${props => props.theme.color.blue};
     font-size: 1.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover{
       transform: translateY(-4px);
-      background-color: ${props => props.theme.color.green};
+      background-color: ${props => props.theme.color.grey};
     }
   }
 `

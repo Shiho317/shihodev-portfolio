@@ -78,12 +78,12 @@ export const ProjectIcon = styled.a`
   height: 2.5rem;
   border-radius: 50%;
   font-size: 1.5rem;
-  color: ${props => props.theme.color.orange};
-  background-color: ${props => props.theme.color.yellow};
+  color: ${props => props.theme.color.blue};
+  background-color: ${props => props.theme.color.beige};
 
   &:hover{
-    background-color: ${props => props.theme.color.orange};
-    color: ${props => props.theme.color.yellow};
+    background-color: ${props => props.theme.color.blue};
+    color: ${props => props.theme.color.beige};
     transition: all 0.3s ease;
   }
 `
@@ -98,13 +98,13 @@ export const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-  background-color: ${props => props.theme.color.orange};
-  color: ${props => props.theme.color.yellow};
+  background-color: ${props => props.theme.color.blue};
+  color: ${props => props.theme.color.beige};
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
   &:hover{
-    background-color: ${props => props.theme.color.green};
-    color: ${props => props.theme.color.yellow};
+    background-color: ${props => props.theme.color.grey};
+    color: ${props => props.theme.color.beige};
     transition: all 0.3s ease;
   }
 `
