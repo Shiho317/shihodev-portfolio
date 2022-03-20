@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.div`
   width: 100vw;
   height: 5rem;
   padding: 0 3rem;
-  background-color: ${props => props.theme.color.orange};
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -62,19 +62,19 @@ export const Icons = styled.div`
   & .icons-wrap{
     width: 2.3rem;
     height: 2.3rem;
-    border: 2px solid #f5eedc;
+    border: 2px solid ${props => props.theme.color.yellow};
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #f5eedc;
+    color: ${props => props.theme.color.yellow};
     font-size: 1.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover{
       transform: translateY(-4px);
-      background-color: #c0d8c0;
+      background-color: ${props => props.theme.color.green};
     }
   }
 `
