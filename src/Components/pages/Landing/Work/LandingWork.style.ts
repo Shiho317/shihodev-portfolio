@@ -99,7 +99,6 @@ export const Button = styled.button`
   cursor: pointer;
   outline: none;
   background-color: ${props => props.theme.color.orange};
-  
   color: ${props => props.theme.color.yellow};
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
