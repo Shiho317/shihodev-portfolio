@@ -7,7 +7,7 @@ export const AboutWrapper = styled.div`
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  background-color: ${props => props.theme.color.orange}
+  background-color: ${props => props.theme.color.blue};
 `
 
 export const NameTitle = styled.div`
@@ -15,6 +15,7 @@ export const NameTitle = styled.div`
   & h1{
     font-size: 3rem;
     line-height: 5rem;
+    color: ${props => props.theme.color.beige}
   }
 `
 
@@ -30,6 +31,10 @@ export const DetailsAboutMe = styled.div`
     line-height: 2rem;
   }
 
+  & .about-me{
+    color: ${props => props.theme.color.grey}
+  }
+
   & .to-about-btn{
     display: flex;
     flex-direction: column;
@@ -37,7 +42,7 @@ export const DetailsAboutMe = styled.div`
     gap: 1rem;
 
     & h3{
-      background-color: ${props => props.theme.color.green};
+      background-color: ${props => props.theme.color.cream};
       padding: 0 1rem;
     }
 
@@ -45,8 +50,8 @@ export const DetailsAboutMe = styled.div`
       font-size: 1.2rem;
       width: 15rem;
       height: 3rem;
-      background-color: ${props => props.theme.color.yellow};
-      color: ${props => props.theme.color.orange};
+      background-color: ${props => props.theme.color.cream};
+      color: ${props => props.theme.color.blue};
       font-weight: 600;
       border: none;
       border-radius: 5px;
@@ -55,8 +60,8 @@ export const DetailsAboutMe = styled.div`
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
       &:hover{
-        color: ${props => props.theme.color.yellow};
-        background-color: ${props => props.theme.color.green};
+        color: ${props => props.theme.color.blue};
+        background-color: ${props => props.theme.color.grey};
         transition: all 0.3s ease;
       }
     }

@@ -10,7 +10,7 @@ height: 90vh;
   bottom: 0;
   width: 100%;
   height: 2rem;
-  background-color: #ecb390;
+  background-color: ${props => props.theme.color.cream};
 }
 `
 
@@ -56,7 +56,7 @@ export const BubbleOne = styled.div`
     height: 100%;
     border-radius: 30% 70% 70% 30% / 60% 40% 60% 40%;
     transform-style: preserve-3d;
-    background-color: ${props => props.theme.color.green};
+    background-color: ${props => props.theme.color.grey};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +126,7 @@ export const BubbleTwo = styled.div`
     height: 100%;
     border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
     transform-style: preserve-3d;
-    background-color: ${props => props.theme.color.red};
+    background-color: ${props => props.theme.color.blue};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,7 +188,7 @@ export const BubbleThree = styled.div`
     height: 100%;
     border-radius: 70% 50% 50% 70% / 40% 80% 40% 80%;
     transform-style: preserve-3d;
-    background-color: ${props => props.theme.color.red};
+    background-color: ${props => props.theme.color.blue};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,7 +249,7 @@ export const BubbleFour = styled.div`
     height: 100%;
     border-radius: 50% 30% 70% 30% / 60% 40% 60% 30%;
     transform-style: preserve-3d;
-    background-color: ${props => props.theme.color.green};
+    background-color: ${props => props.theme.color.grey};
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,7 +310,7 @@ export const BubbleFive = styled.div`
     height: 100%;
     border-radius: 50% 30% 30% 50% / 60% 40% 60% 30%;
     transform-style: preserve-3d;
-    background-color: ${props => props.theme.color.green};
+    background-color: ${props => props.theme.color.grey};
     display: flex;
     align-items: center;
     justify-content: center;

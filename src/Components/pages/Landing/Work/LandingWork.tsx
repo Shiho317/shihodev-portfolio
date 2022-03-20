@@ -62,7 +62,7 @@ const LandingWork = () => {
       </Projects>
         <Link to='/work'>
           <Button>
-            &lt;My Projects/&gt;
+            SEE ALL PROJECTS
           </Button>
         </Link>
     </WorkWrapper>

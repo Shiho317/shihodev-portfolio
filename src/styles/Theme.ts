@@ -1,8 +1,8 @@
 export const theme = {
   color: {
-    orange: '#ecb390',
-    yellow: '#f5eedc',
-    red: '#dd4a48',
-    green: '#c0d8c0',
+    beige: '#f7f6f2',
+    grey: '#c8c6c6',
+    blue: '#4b6587',
+    cream: '#f0e5cf',
   }
 };
