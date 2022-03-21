@@ -1,4 +1,8 @@
-import { AboutWrapper, DetailsAboutMe, NameTitle } from "./LandingAbout.style";
+import { 
+  AboutWrapper, 
+  DetailsAboutMe, 
+  NameTitle
+  } from "./LandingAbout.style";
 
 const LandingAbout = () => {
   return(

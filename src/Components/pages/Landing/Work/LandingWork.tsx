@@ -1,6 +1,12 @@
 import { useState } from 'react';
 import ProjectDatas from '../../../../assets/ProjectData.json';
-import { Button, ProjectDetails, ProjectIcon, Projects, WorkWrapper } from "./LandingWork.style";
+import { 
+  Button, 
+  ProjectDetails, 
+  ProjectIcon, 
+  Projects, 
+  WorkWrapper
+  } from "./LandingWork.style";
 import { CgWebsite } from 'react-icons/cg';
 import { AiOutlineAppstoreAdd } from 'react-icons/ai';
 import { FiGithub, FiPaperclip } from 'react-icons/fi';

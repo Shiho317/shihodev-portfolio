@@ -90,10 +90,9 @@ export const ProjectIcon = styled.a`
 
 export const Button = styled.button`
   position: relative;
-  width: 17rem;
-  height: 3.5rem;
-  font-size: 1.3rem;
-  font-weight: 600;
+  width: 15rem;
+  height: 3rem;
+  font-size: 1.2rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;

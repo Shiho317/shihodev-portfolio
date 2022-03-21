@@ -6,6 +6,7 @@ import { theme } from "../../../styles/Theme";
 import LandingHero from "./Hero/LandingHero";
 import LandingWork from "./Work/LandingWork";
 import LandingAbout from "./About/LandingAbout";
+import LandingContact from "./Contact/LandingContact";
 
 const Landing = () => {
   return(
@@ -15,6 +16,7 @@ const Landing = () => {
         <LandingHero/>
         <LandingWork/>
         <LandingAbout/>
+        <LandingContact/>
         <Footer/>
       </LandingWrapper>
     </ThemeProvider>
