@@ -1,5 +1,17 @@
 import { useState } from "react";
-import { Eye, BubbleOne, BubbleTwo, Eyeball, HeroWrapper, Owl, OwlEyes, Bubble, BubbleThree, BubbleFour, BubbleFive } from "./LandingHero.style";
+import { 
+  Eye, 
+  BubbleOne, 
+  BubbleTwo, 
+  Eyeball, 
+  HeroWrapper, 
+  Owl, 
+  OwlEyes, 
+  Bubble, 
+  BubbleThree, 
+  BubbleFour, 
+  BubbleFive
+  } from "./LandingHero.style";
 import owl from '../../../../assets/images/owl.svg';
 import { BiCodeAlt } from 'react-icons/bi';
 import { BsLayoutWtf } from 'react-icons/bs';

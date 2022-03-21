@@ -32,7 +32,11 @@ export const DetailsAboutMe = styled.div`
   }
 
   & .about-me{
-    color: ${props => props.theme.color.grey}
+    color: ${props => props.theme.color.grey};
+
+    & h3{
+      font-weight: 400;
+    }
   }
 
   & .to-about-btn{
@@ -52,7 +56,6 @@ export const DetailsAboutMe = styled.div`
       height: 3rem;
       background-color: ${props => props.theme.color.cream};
       color: ${props => props.theme.color.blue};
-      font-weight: 600;
       border: none;
       border-radius: 5px;
       cursor: pointer;
