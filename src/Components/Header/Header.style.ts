@@ -6,7 +6,9 @@ export const HeaderWrapper = styled.div`
   width: 100vw;
   height: 5rem;
   padding: 0 3rem;
-  background-color: transparent;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,10 +16,10 @@ export const HeaderWrapper = styled.div`
 
   & .logo-wrapper{
       flex: 1;
-      cursor: pointer;
     }
 
-  & .logo-wrapper img{
+  & .logo-wrapper-img{
+      cursor: pointer;
       width: 3.5rem;
     }
 `
@@ -39,16 +41,23 @@ export const NavButton = styled.div`
         transform: translateY(-4px);
       }
     }
+
+    & .resume{
+      display: flex;
+      align-items: center;
+      padding: 0 0.4rem;
+      background-color: rgba(240,229,207,0.5);
+    }
   }
 
   & a{
-    color: ${props => props.theme.color.blue};
+    color: ${props => props.theme.color.grey};
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s ease;
 
     &:hover{
-      color: ${props => props.theme.color.grey};
+      color: ${props => props.theme.color.blue};
     }
   }
 `
@@ -62,19 +71,19 @@ export const Icons = styled.div`
   & .icons-wrap{
     width: 2.3rem;
     height: 2.3rem;
-    border: 2px solid ${props => props.theme.color.blue};
+    border: 2px solid ${props => props.theme.color.grey};
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: ${props => props.theme.color.blue};
+    color: ${props => props.theme.color.grey};
     font-size: 1.3rem;
     cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover{
       transform: translateY(-4px);
-      background-color: ${props => props.theme.color.grey};
+      background-color: ${props => props.theme.color.blue};
     }
   }
 `
