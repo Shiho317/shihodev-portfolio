@@ -34,7 +34,7 @@ const LandingContact = () => {
     emailjs.sendForm(serviceID, templateID, e.currentTarget, userID)
     .then((result) => {
       console.log(result.text);
-      alert(`Thank you ${userData.name}. Your message has sent successfully. I sent you confirm email to "${userData.email}".`)
+      alert(`Thank you ${userData.name}. Confirmation email has been sent to : "${userData.email}".`)
     }, (error) => {
       console.log(error);
       alert('Something went wrong. Please try again.')
