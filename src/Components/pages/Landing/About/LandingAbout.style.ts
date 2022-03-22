@@ -49,6 +49,7 @@ export const DetailsAboutMe = styled.div`
     & h3{
       background-color: ${props => props.theme.color.cream};
       padding: 0 1rem;
+      color: ${props => props.theme.color.blue};
     }
 
     & button{

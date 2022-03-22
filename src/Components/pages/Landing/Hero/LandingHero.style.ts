@@ -372,7 +372,7 @@ export const Eye = styled.div`
   width: 5.8rem;
   height: 5.8rem;
   border-radius: 50%;
-  background-color: white;
+  background-color: transparent;
   overflow: hidden;
 `
 
@@ -384,5 +384,5 @@ export const Eyeball = styled.div`
   width: 2.7rem;
   height: 2.7rem;
   border-radius: 50%;
-  background-color: black;
+  background-color: ${props => props.theme.color.blue};
 `
