@@ -20,17 +20,17 @@ const Header = () => {
           <ul>
             <li>
               <Link to='/work'>
-                &lt;work/&gt;
+                work
               </Link>
             </li>
             <li>
               <Link to='/about'>
-                &lt;about/&gt;
+                about
               </Link>
             </li>
             <li>
-              <Link to='/'>
-                &lt;contact/&gt;
+              <Link to='/contact'>
+                contact
               </Link>
             </li>
             <li>

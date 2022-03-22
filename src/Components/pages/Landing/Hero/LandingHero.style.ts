@@ -16,13 +16,13 @@ height: 90vh;
 
 export const Bubble = styled.div`
   & h3{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: white;
     transform: translateZ(60px);
   }
 
   & h4{
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: white;
     transform: translateZ(60px);
   }

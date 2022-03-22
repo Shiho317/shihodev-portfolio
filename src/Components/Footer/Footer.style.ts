@@ -10,5 +10,6 @@ align-items: center;
 
 p{
   color: ${props => props.theme.color.beige};
+  font-size: 0.8rem;
 }
 `
