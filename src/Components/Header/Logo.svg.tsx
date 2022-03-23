@@ -10,7 +10,7 @@ const LogoSvg = () => {
     visible: {
       fill: "rgb(240,229,207)",
       rotate: 0,
-      transition: { duration: 2 } 
+      transition: { duration: 2, delay: 0.5 } 
     }
   };
 
@@ -22,7 +22,7 @@ const LogoSvg = () => {
     visible: {
       pathLength: 1,
       rotate: 0,
-      transition: { duration: 1 } 
+      transition: { duration: 1, delay: 0.5 } 
     }
   }
 
