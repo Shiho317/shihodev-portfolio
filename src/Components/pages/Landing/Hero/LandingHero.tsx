@@ -52,7 +52,7 @@ const LandingHero: React.FC<Props> = ({onAnimation, showOwl}) => {
               </div>
             </div>
           </BubbleOne>
-          <BubbleTwo style={!onAnimation ? {transform: 'rotate(-40deg)', top: '25%', left: '28%'} : {transform: 'rotate(0deg)', top: '30%', left: '20%'}}>
+          <BubbleTwo style={!onAnimation ? {transform: 'rotate(-40deg)', top: '25%', left: '28%'} : {transform: 'rotate(0deg)', top: '25%', left: '20%'}}>
             <div className="card">
               <div className="front">
                 <h4>Front-end developer</h4>
@@ -62,7 +62,7 @@ const LandingHero: React.FC<Props> = ({onAnimation, showOwl}) => {
               </div>
             </div>
           </BubbleTwo>
-          <BubbleThree style={!onAnimation ? {transform: 'rotate(-50deg)', top: '25%', right: '28%'} : {transform: 'rotate(0deg)', top: '30%', right: '20%'}}>
+          <BubbleThree style={!onAnimation ? {transform: 'rotate(-50deg)', top: '25%', right: '28%'} : {transform: 'rotate(0deg)', top: '25%', right: '20%'}}>
             <div className="card">
               <div className="front">
                 <h4>Web designer</h4>
