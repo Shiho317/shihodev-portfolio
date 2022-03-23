@@ -100,14 +100,13 @@ export const BubbleOne = styled.div`
 
 export const BubbleTwo = styled.div`
   position: absolute;
-  top: 35%;
-  left: 20%;
   transform: translateY(-35%);
   width: 12rem;
   height: 12rem;
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
   perspective: 1000px;
   cursor: pointer;
+  transition: all 1s ease;
 
   .card{
     position: relative;
@@ -162,14 +161,13 @@ export const BubbleTwo = styled.div`
 
 export const BubbleThree = styled.div`
   position: absolute;
-  top: 35%;
-  right: 20%;
   transform: translateY(-35%);
   width: 12rem;
   height: 12rem;
   border-radius: 70% 50% 50% 70% / 40% 80% 40% 80%;
   cursor: pointer;
   perspective: 1000px;
+  transition: all 1s ease;
 
   .card{
     position: relative;
@@ -224,13 +222,12 @@ export const BubbleThree = styled.div`
 
 export const BubbleFour = styled.div`
   position: absolute;
-  bottom: 4rem;
-  left: 10%;
   width: 12rem;
   height: 12rem;
   border-radius: 50% 30% 70% 30% / 60% 40% 60% 30%;
   perspective: 1000px;
   cursor: pointer;
+  transition: all 1s ease;
 
   .card{
     position: relative;
@@ -285,13 +282,12 @@ export const BubbleFour = styled.div`
 
 export const BubbleFive = styled.div`
   position: absolute;
-  bottom: 4rem;
-  right: 10%;
   width: 12rem;
   height: 12rem;
   border-radius: 50% 30% 30% 50% / 60% 40% 60% 30%;
   perspective: 1000px;
   cursor: pointer;
+  transition: all 1s ease;
 
   .card{
     position: relative;
@@ -352,6 +348,7 @@ export const Owl = styled.div`
   bottom: 0.3rem;
   transform: translateX(-50%);
   z-index: 2;
+  transition: all 0.5s ease;
   
   & img{
     width: 18rem;

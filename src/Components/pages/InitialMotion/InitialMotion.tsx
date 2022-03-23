@@ -1,20 +1,15 @@
 import { AnimatedTitle, InitialMotionWrapper, Intro, LogoImg, MyTitle } from "./InitialMotion.style";
 import logo from '../../../assets/images/shihoN-logo.svg';
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 
-const InitialMotion = () => {
+type Props = {
+  showInitialMotion: boolean;
+}
 
-  const [showInitialMotion, setShowInitialMotion ] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShowInitialMotion(false)
-    }, 7000)
-  }, [])
+const InitialMotion:React.FC<Props> = ({showInitialMotion}) => {
 
   return(
-    <InitialMotionWrapper style={!showInitialMotion ? {top: '-100vh'} : {top: 0}}>
+    <InitialMotionWrapper style={!showInitialMotion ? {width: '10px', height: '10px', borderRadius: '50%', top: '50%', left: '50%', transform: 'translateY(-50%)', margin: '0 auto', opacity: 0} : {top: 0}}>
       <Intro>
         <h1>HELLO! I AM</h1>
         <MyTitle>

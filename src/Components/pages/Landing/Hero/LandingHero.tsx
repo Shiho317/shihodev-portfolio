@@ -19,10 +19,15 @@ import { FaReact } from 'react-icons/fa';
 import { SiMongodb, SiExpress, SiNodedotjs } from 'react-icons/si';
 import SmileMemoji from '../../../../assets/images/memoji-smile.png';
 
-const LandingHero = () => {
+type Props ={
+  onAnimation: boolean;
+  showOwl: boolean;
+}
 
-  const [ mouseX, setMouseX ] = useState(0);
-  const [ mouseY, setMouseY ] = useState(0);
+const LandingHero: React.FC<Props> = ({onAnimation, showOwl}) => {
+
+  const [ mouseX, setMouseX ] = useState(200);
+  const [ mouseY, setMouseY ] = useState(200);
 
   const onMouseMove = (e: any) => {
     setMouseX(e.screenX)
@@ -47,7 +52,7 @@ const LandingHero = () => {
               </div>
             </div>
           </BubbleOne>
-          <BubbleTwo>
+          <BubbleTwo style={!onAnimation ? {transform: 'rotate(-40deg)', top: '25%', left: '28%'} : {transform: 'rotate(0deg)', top: '30%', left: '20%'}}>
             <div className="card">
               <div className="front">
                 <h4>Front-end developer</h4>
@@ -57,7 +62,7 @@ const LandingHero = () => {
               </div>
             </div>
           </BubbleTwo>
-          <BubbleThree>
+          <BubbleThree style={!onAnimation ? {transform: 'rotate(-50deg)', top: '25%', right: '28%'} : {transform: 'rotate(0deg)', top: '30%', right: '20%'}}>
             <div className="card">
               <div className="front">
                 <h4>Web designer</h4>
@@ -67,7 +72,7 @@ const LandingHero = () => {
               </div>
             </div>
           </BubbleThree>
-          <BubbleFour>
+          <BubbleFour style={!onAnimation ? {transform: 'rotate(-180deg)', bottom: '10rem', left: '35%'} : {transform: 'rotate(0deg)', bottom: '4rem', left: '10%'}}>
             <div className="card">
               <div className="front">
                 <h4>React developer</h4>
@@ -77,7 +82,7 @@ const LandingHero = () => {
               </div>
             </div>
           </BubbleFour>
-          <BubbleFive>
+          <BubbleFive style={!onAnimation ? {transform: 'rotate(-40deg)', bottom: '10rem', right: '35%'} : {transform: 'rotate(0deg)', bottom: '4rem', right: '10%'}}>
             <div className="card">
               <div className="front">
                 <h4>MERN stack developer</h4>
@@ -93,7 +98,7 @@ const LandingHero = () => {
             </div>
           </BubbleFive>
         </Bubble>
-        <Owl>
+        <Owl style={!showOwl ? {opacity: 0} : {opacity: 1}}>
           <OwlEyes>
             <Eye>
               <Eyeball style={{left: `${eyeX}%`, top: `${eyeY}%`, transform: `translate(-${eyeX}%, -${eyeY}%)`}}>
