@@ -20,13 +20,13 @@ export interface ProjectDataType{
   gif: string;
   url: string;
   github: string;
-  skill: string[];
-  description: string;
+  skills: string[];
+  descriptions: string[];
 }
 
 const LandingWork = () => {
 
-  const [ isActive, setIsActive ] = useState(0);
+  const [ isActive, setIsActive ] = useState<number>(0);
 
   const addActiveClass = (index: number) => {
     setIsActive(index);

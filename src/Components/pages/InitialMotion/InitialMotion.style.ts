@@ -13,7 +13,7 @@ export const InitialMotionWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 `
 
 export const Intro = styled.div`

@@ -7,8 +7,13 @@
       "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647649951/ShihoDev-Portfolio/doughing_gjioyr.gif",
       "url": "https://doughing.vercel.app/",
       "github": "https://github.com/Shiho317/DOUGHING",
-      "skill": ["react", "typescript", "css", "firebase"],
-      "description": "Pizza online order application that is built with React and Typescript. Using firebase to manage user authentication and order details. All pizza ingredients and logo is created by myself with using Inkscape and Figma. Using framer motion to make effective animation."
+      "skills": ["react", "typescript", "css", "firebase"],
+      "descriptions": [
+        "Pizza online order application that is built with React and Typescript.", 
+        "Using firebase to manage user authentication and order details.", 
+        "All pizza ingredients and logo is created by myself with using Inkscape and Figma.", 
+        "Using framer motion to make effective animation."
+      ]
     },
     {
       "title": "E-commerce website",
@@ -17,8 +22,13 @@
       "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647649966/ShihoDev-Portfolio/ecommerce_xbuisn.gif",
       "url": "https://sailfurniture-ecommerce-mixs4kfls-shiho317.vercel.app/",
       "github": "https://github.com/Shiho317/ECapp-typescript",
-      "skill": ["react", "typescript", "styled-components", "material-ui"],
-      "description": "E-Commerce website that is built with React and Typescript. Created json file to storage items and users. Created shopping cart modal which shows you items that are in your cart and total cost. Used styled-component and Material UI for styling."
+      "skills": ["react", "typescript", "styled-components", "material-ui"],
+      "descriptions": [
+        "E-Commerce website that is built with React and Typescript.", 
+        "Created json file to storage items and users.", 
+        "Created shopping cart modal which shows you items that are in your cart and total cost.", 
+        "Used styled-component and Material UI for styling."
+      ]
     },
     {
       "title": "Weather app",
@@ -27,8 +37,12 @@
       "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647650546/ShihoDev-Portfolio/weatherapp_bmcdks.gif",
       "url": "https://nextjs-weather-app-cyan.vercel.app/",
       "github": "https://github.com/Shiho317/nextjs-weatherApp",
-      "skill": ["next.js", "tailwind css", "open weather API"],
-      "description": "A web application that tells the current weather, hourly weather, weekly weather and temperatures in a specific city. The background image will be changed depends on current weather and local time. Built with Next.js and Tailwind css, Open Weather API."
+      "skills": ["next.js", "tailwind css", "open weather API"],
+      "descriptions": [
+        "A web application that tells the current weather, hourly weather, weekly weather and temperatures in a specific city.", 
+        "The background image will be changed depends on current weather and local time.", 
+        "Built with Next.js and Tailwind css, Open Weather API."
+      ]
     },
     {
       "title": "Seattle DJ Website",
@@ -37,8 +51,13 @@
       "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647650058/ShihoDev-Portfolio/protesttunes_dxz9ci.gif",
       "url": "https://dj-general-strike-protest-tunes.vercel.app/",
       "github": "https://github.com/chingu-voyages/v35-geckos-team-08",
-      "skill": ["next.js", "node.js", "css"],
-      "description": "A website that has a client who is a DJ in Seattle, US. Created web design based on his request and his favourite. Used Cloudinary for storage data and used Emailjs for receiving, sending auto reply. Created json file for making it easy to upload his new audio file."
+      "skills": ["next.js", "node.js", "css"],
+      "descriptions": [
+        "A website that has a client who is a DJ in Seattle, US.", 
+        "Created web design based on his request and his favourite.", 
+        "Used Cloudinary for storage data and used Emailjs for receiving, sending auto reply.", 
+        "Created json file for making it easy to upload his new audio file."
+      ]
     },
     {
       "title": "InforMATE",
@@ -47,8 +66,13 @@
       "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647650528/ShihoDev-Portfolio/informate_eejxhb.gif",
       "url": "https://trusting-wilson-3e96c1.netlify.app/",
       "github": "https://github.com/Shiho317/react-app-informate",
-      "skill": ["react", "scss"],
-      "description": "A web application that is created by imagination of sharing useful information with others. Has a function for logging in, creating account and tweeting. Available to change account information and icon image. Background of account page change depends on the country you choose."
+      "skills": ["react", "scss"],
+      "descriptions": [
+        "A web application that is created by imagination of sharing useful information with others.", 
+        "Has a function for logging in, creating account and tweeting.", 
+        "Available to change account information and icon image.", 
+        "Background of account page change depends on the country you choose."
+      ]
     },
     {
       "title": "Shiho N Portfolio",
@@ -57,8 +81,8 @@
       "gif": "",
       "url": "",
       "github": "",
-      "skill": ["react", "typescript", "styled-components"],
-      "description": ""
+      "skills": ["react", "typescript", "styled-components"],
+      "descriptions": [""]
     }
   ]
 }
