@@ -12,9 +12,9 @@ import InitialMotion from "../InitialMotion/InitialMotion";
 
 const Landing = () => {
 
-  const [showInitialMotion, setShowInitialMotion ] = useState(true);
-  const [ onAnimation, setOnAnimation ] = useState(false);
-  const [ showOwl, setShowOwl ] = useState(false);
+  const [showInitialMotion, setShowInitialMotion ] = useState<boolean>(true);
+  const [ onAnimation, setOnAnimation ] = useState<boolean>(false);
+  const [ showOwl, setShowOwl ] = useState<boolean>(false);
 
   useEffect(() => {
     setTimeout(() => {

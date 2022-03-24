@@ -26,8 +26,8 @@ type Props ={
 
 const LandingHero: React.FC<Props> = ({onAnimation, showOwl}) => {
 
-  const [ mouseX, setMouseX ] = useState(200);
-  const [ mouseY, setMouseY ] = useState(200);
+  const [ mouseX, setMouseX ] = useState<number>(200);
+  const [ mouseY, setMouseY ] = useState<number>(200);
 
   const onMouseMove = (e: any) => {
     setMouseX(e.screenX)
