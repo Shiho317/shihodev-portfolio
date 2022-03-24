@@ -13,10 +13,11 @@ type Props = {
     github: string;
     skills: string[];
     descriptions: string[];
-  }
+  };
+  index: number;
 }
 
-const DataList: React.FC<Props> = ({project}) => {
+const DataList: React.FC<Props> = ({project, index}) => {
 
   const [ isHover, setIsHover ] = useState<boolean>(false);
 
@@ -25,7 +26,7 @@ const DataList: React.FC<Props> = ({project}) => {
   }, [])
 
   return(
-    <Project>
+    <Project style={ {flexDirection: index % 2 === 0 ? 'row-reverse' : 'row'} }>
         <div className='explanation'>
           <Skill>
             {project.skills.map((skill, index) => (
