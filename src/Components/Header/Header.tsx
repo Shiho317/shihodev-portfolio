@@ -4,6 +4,7 @@ import LogoSvg from "./Logo.svg";
 import { SiDiscord } from 'react-icons/si';
 import { FiLinkedin, FiGithub, FiMail } from 'react-icons/fi';
 import { MdSaveAlt } from 'react-icons/md';
+// import ResumePDF from '../../assets/shihonagano-resume.pdf';
 
 const Header = () => {
 
@@ -34,10 +35,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to='/' className="resume">
+              <a href='ShihoNagano-Résumé.pdf' download='ShihoNagano-Résumé.pdf' className="resume">
                 <p>resume</p>
                 <MdSaveAlt/>
-              </Link>
+              </a>
             </li>
           </ul>
         </NavButton>

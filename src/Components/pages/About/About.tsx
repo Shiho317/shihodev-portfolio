@@ -8,6 +8,7 @@ import selfImg from '../../../assets/images/aboutme-img.png';
 import Skills from "./Skills";
 
 const About = () => {
+
   return(
     <ThemeProvider theme={theme}>
       <AboutWrapper>
@@ -18,22 +19,22 @@ const About = () => {
               <h1>About<br/>Me.</h1>
             </div>
             <SelfImg>
-              <img src={selfImg} alt="self-img" />
+              <img src={selfImg} alt="self-img"/>
             </SelfImg>
             <Skills/>
           </AboutLeft>
           <AboutRight>
             <Introwrapper>
             <h3>&ldquo; I am Shiho Nagano. &rdquo;</h3>
-            <p>A front-end developer with a background as a nurse and a passion for learning, designing, programming, building functions. About personality, reliable, fast learner, self motivated, hardworking team player who works well with others. 
-            I believe that my passion for web development, designing, my skills and my personality would make me a great asset for your team and I would love to improve my knowledge and skills as your team member as well.
+            <p>A front-end developer with a background as a nurse and a passion for learning, designing, programming, building functions.<br/>
+            About personality, reliable, fast learner, self motivated, hardworking team player who works well with others.<br/>
+            I believe that my passion for web development, designing, my skills and my personality would make me a great asset for your team and I would love to improve my knowledge and skills as your team member as well.<br/>
 
-            In my latest role as a Front end developer at Protest Tunes, I design a website, code and discuss how to improve a website with coworkers.
-            I have a lot of experience of working as a team through my school project and past work experience. 
-            Combined with my communication skills, problem-solving skills and passion for improving my skills, I am confident I have skills to become part of your team to make your company more successful.
+            In my latest role as a Front end developer at Protest Tunes, I design a website, code and discuss how to improve a website with coworkers.<br/>
+            I have a lot of experience of working as a team through my school project and past work experience.<br/> 
+            Combined with my communication skills, problem-solving skills and passion for improving my skills, I am confident I have skills to become part of your team to make your company more successful.<br/>
 
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, vero placeat possimus, earum ad quae voluptatum quos, provident at id velit doloribus culpa. Alias porro, provident quasi ea odit ducimus?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea quod nihil, fuga quos fugit perferendis. Minus modi illum rerum laudantium autem quo aliquam, sapiente, inventore nam, sunt fugit maxime eius.
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, quibusdam nostrum. Tempore suscipit, quos commodi sit perspiciatis nihil tenetur, maiores molestiae autem sequi quod! Ad praesentium sint repellat deleniti! Optio!
             </p>
             <Link to='/'>

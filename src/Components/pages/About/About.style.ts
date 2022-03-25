@@ -43,10 +43,10 @@ export const SelfImg = styled.div`
   align-items: center;
   border-radius: 50% 80% 70% 50% / 40% 80% 70% 60%;
   background-color: ${props => props.theme.color.cream};
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
   & img{
     width: 20rem;
+    transition: all 0.5s ease;
   }
 `
 
