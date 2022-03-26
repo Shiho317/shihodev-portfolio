@@ -22,7 +22,7 @@ const Work = () => {
             </div>
             <Projects>
               {projects.map((project, index) => (
-                <DataList key={index} project={project}/>
+                <DataList key={index} project={project} index={index}/>
               ))}
             </Projects>
           </WorkTitles>

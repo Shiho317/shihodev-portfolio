@@ -9,7 +9,7 @@ type Props = {
 const InitialMotion:React.FC<Props> = ({showInitialMotion}) => {
 
   return(
-    <InitialMotionWrapper style={!showInitialMotion ? {width: '10px', height: '10px', borderRadius: '50%', top: '50%', left: '50%', transform: 'translateY(-50%)', margin: '0 auto', opacity: 0} : {top: 0}}>
+    <InitialMotionWrapper style={!showInitialMotion ? {opacity: 0, transform: 'translateY(-100%)'} : {top: 0}}>
       <Intro>
         <h1>HELLO! I AM</h1>
         <MyTitle>

@@ -79,5 +79,6 @@ export const Demo = styled.div`
   & img{
     width: 35rem;
     margin: 0 auto;
+    cursor: pointer;
   }
 `

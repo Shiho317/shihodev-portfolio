@@ -4,26 +4,19 @@ import Header from "../../Header/Header";
 import { LandingWrapper } from "./Landing.style";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../../styles/Theme";
-import LandingHero from "./Hero/LandingHero";
 import LandingWork from "./Work/LandingWork";
 import LandingAbout from "./About/LandingAbout";
 import LandingContact from "./Contact/LandingContact";
 import InitialMotion from "../InitialMotion/InitialMotion";
+import Hero from "./Hero/Hero";
 
 const Landing = () => {
 
   const [showInitialMotion, setShowInitialMotion ] = useState<boolean>(true);
-  const [ onAnimation, setOnAnimation ] = useState<boolean>(false);
-  const [ showOwl, setShowOwl ] = useState<boolean>(false);
-
+  
   useEffect(() => {
     setTimeout(() => {
       setShowInitialMotion(false);
-      setOnAnimation(true);
-      
-      setTimeout(() => {
-        setShowOwl(true)
-      },500)
     }, 7000)
   }, [])
 
@@ -33,7 +26,7 @@ const Landing = () => {
       {!showInitialMotion &&
       <LandingWrapper>
         <Header/>
-        <LandingHero onAnimation={onAnimation} showOwl={showOwl}/>
+        <Hero/>
         <LandingWork/>
         <LandingAbout/>
         <LandingContact/>
