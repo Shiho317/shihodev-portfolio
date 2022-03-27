@@ -10,20 +10,28 @@ export const ContactWrapper = styled.div`
 
 export const ContactContents = styled.div`
   position: relative;
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
 
+  @media ${props => props.theme.device.laptop} {
+    width: 60%;
+  }
+
   & .cream-1{
     position: absolute;
-    top: 7%;
+    top: 20%;
     left: 0;
     width: 30%;
     height: 25%;
     background-color: ${props => props.theme.color.cream};
+
+    @media ${props => props.theme.device.laptop} {
+      top: 7%;
+    }
   }
 
   & .cream-2{
@@ -48,7 +56,13 @@ export const ContactContents = styled.div`
 
 export const ContactTitle = styled.div`
   & h1{
-    color: ${props => props.theme.color.blue}
+    color: ${props => props.theme.color.blue};
+    font-size: 1.5rem;
+    text-align: center;
+    
+    @media ${props => props.theme.device.laptop} {
+      font-size: 2rem;
+    }
   }
 `
 

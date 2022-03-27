@@ -8,7 +8,7 @@ const GeishaSvg = () => {
     },
     active: {
       pathLength: 1,
-      scale: [1, 1, 1, 0.4],
+      scale: [1, 1, 0.4, 0.4],
       transition: {
         duration: 5,
         ease: "easeInOut"

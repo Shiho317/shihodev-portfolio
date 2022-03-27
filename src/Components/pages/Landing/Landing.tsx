@@ -17,7 +17,7 @@ const Landing = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowInitialMotion(false);
-    }, 7000)
+    }, 6000)
   }, [])
 
   return(

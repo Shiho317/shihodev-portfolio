@@ -2,30 +2,46 @@ import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
   width: 100%;
-  height: 50vh;
+  height: 100vh;
   display: flex;
+  flex-direction: column;
   gap: 2rem;
   justify-content: center;
   align-items: center;
   background-color: ${props => props.theme.color.blue};
+  padding: 1rem;
+
+  @media ${props => props.theme.device.laptop} {
+    height: 50vh;
+    flex-direction: row;
+  }
 `
 
 export const NameTitle = styled.div`
   
   & h1{
-    font-size: 3rem;
-    line-height: 5rem;
-    color: ${props => props.theme.color.beige}
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: ${props => props.theme.color.beige};
+
+    @media ${props => props.theme.device.laptop} {
+      font-size: 3rem;
+      line-height: 5rem;
+    }
   }
 `
 
 export const DetailsAboutMe = styled.div`
-  height: 100%;
+  height: unset;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
+  @media ${props => props.theme.device.laptop} {
+    height: 100%;
+  }
 
   & h3{
     line-height: 2rem;
