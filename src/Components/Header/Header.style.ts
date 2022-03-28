@@ -1,27 +1,25 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  overflow: hidden;
-`
-
 export const HeaderWrapper = styled.div`
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 5rem;
   padding: 0 1rem;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  z-index: 99;
+  
   @media ${props => props.theme.device.laptop} {
     padding: 0 3rem;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.3);
   }
 
   & .logo-wrapper-img{

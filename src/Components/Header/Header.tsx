@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { HeaderWrapper, Wrapper } from "./Header.style";
+import { HeaderWrapper } from "./Header.style";
 import LogoSvg from "./Logo.svg";
 import { useState } from "react";
 import HamburgerMenu from "./HamburgerMenu";
@@ -10,7 +10,6 @@ const Header = () => {
   const [ isHamburgerOpen, setIsHamburgerOpen ] = useState(false);
 
   return(
-    <Wrapper>
       <HeaderWrapper>
         <div className="logo-wrapper">
           <Link to='/'>
@@ -19,10 +18,9 @@ const Header = () => {
             </div>
           </Link>
         </div>
+        <NavMenu isHamburgerOpen={isHamburgerOpen}/>
+        <HamburgerMenu isOpen={isHamburgerOpen} setOpen={setIsHamburgerOpen}/>
       </HeaderWrapper>
-      <NavMenu isHamburgerOpen={isHamburgerOpen} setIsHamburgerOpen={setIsHamburgerOpen}/>
-      <HamburgerMenu isOpen={isHamburgerOpen} setOpen={setIsHamburgerOpen}/>
-    </Wrapper>
   )
 };
 

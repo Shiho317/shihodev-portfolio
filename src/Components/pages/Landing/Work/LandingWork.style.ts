@@ -12,79 +12,62 @@ export const WorkWrapper = styled.div`
 `
 
 export const Projects = styled.div`
-  width: 90%;
+  width: 80%;
+  height: 60%;
   display: flex;
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  transform: translateZ(60px);
+  flex-wrap: wrap;
+  
+
+  @media ${props => props.theme.device.laptop} {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transform: translateZ(60px);
+  }
 
   & .project{
     position: relative;
-    width: 10rem;
-    height: 60vh;
+    width: 50%;
+    height: 9.5vh;
     background-size: cover;
     background-position: center;
-    border-radius: 50px;
+    border-radius: 5px;
     transition: all 0.5s ease;
-    transform-style: preserve-3d;
-    transform: rotateY(-60deg);
     cursor: pointer;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transform-style: flat;
+    transform: rotateY(0);
+    
+    @media ${props => props.theme.device.laptop} {
+      width: 10rem;
+      height: 60vh;
+      transform-style: preserve-3d;
+      transform: rotateY(-60deg);
+      border-radius: 10px;
+    }
   }
 
   & .active{
     width: 100%;
+    height: 25vh;
     transform: rotateY(0deg);
+
+    @media ${props => props.theme.device.laptop} {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   & .prev{
-    transform: rotateY(60deg);
-  }
-`
+    transform: rotateY(0deg);
 
-export const ProjectDetails = styled.div`
-  position: absolute;
-  width: 100%;
-  bottom: 20px;
-  left: 20px;
-
-  & .project-type{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-  }
-
-  & .icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    opacity: 1;
-  }
-
-  & .hidden{
-    display: none;
-    opacity: 0;
-    transition: all 0.5s ease;
-  }
-`
-
-export const ProjectIcon = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  font-size: 1.5rem;
-  color: ${props => props.theme.color.blue};
-  background-color: ${props => props.theme.color.beige};
-
-  &:hover{
-    background-color: ${props => props.theme.color.blue};
-    color: ${props => props.theme.color.beige};
-    transition: all 0.3s ease;
+    @media ${props => props.theme.device.laptop} {
+      transform: rotateY(60deg);
+    }
   }
 `
 

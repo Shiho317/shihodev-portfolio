@@ -17,15 +17,23 @@ export const WorkTitles = styled.div`
 
   & .title{
     width: 100%;
-    height: 10rem;
+    height: 5rem;
     display: grid;
     align-items: center;
     background-color: ${props => props.theme.color.cream};
 
+    @media ${props => props.theme.device.laptop} {
+      height: 10rem;
+    }
+
     & h1{
       text-align: center;
-      font-size: 4.5rem;
+      font-size: 2rem;
       color: ${props => props.theme.color.blue};
+
+      @media ${props => props.theme.device.laptop} {
+        font-size: 4.5rem;
+      }
     }
   }
 `

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroWrapper = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 `
 
 export const HeroContents = styled.div`

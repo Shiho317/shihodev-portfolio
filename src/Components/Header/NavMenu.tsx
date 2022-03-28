@@ -6,12 +6,13 @@ import { MdSaveAlt } from 'react-icons/md';
 
 type Props = {
   isHamburgerOpen: boolean;
-  setIsHamburgerOpen: any;
 }
 
-const NavMenu: React.FC<Props> = ({isHamburgerOpen, setIsHamburgerOpen}) => {
+const NavMenu: React.FC<Props> = ({isHamburgerOpen}) => {
   return(
-    <ShownButton style={{transform: isHamburgerOpen ? 'translateX(0%)' : 'translateX(120%)'}}>
+    <ShownButton style={{
+      transform: isHamburgerOpen ? 'translateX(0%)' : 'translateX(120%)', 
+      visibility: isHamburgerOpen ? 'visible' : 'hidden'}}>
       <NavButton>
         <ul>
           <li>

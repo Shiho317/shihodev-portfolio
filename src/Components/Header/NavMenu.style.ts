@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ShownButton = styled.div`
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 80%;
@@ -12,10 +12,11 @@ export const ShownButton = styled.div`
   align-items: center;
   gap: 2rem;
   transition: all 0.3s ease;
+  background: rgba(240, 229, 207, 0.8);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  background: rgba(240, 229, 207, 0.3);
-
+  
+  
   @media ${props => props.theme.device.laptop} {
     gap: 0;
     width: 80%;
@@ -57,13 +58,13 @@ export const NavButton = styled.div`
   }
 
   & a{
-    color: ${props => props.theme.color.grey};
+    color: ${props => props.theme.color.blue};
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s ease;
 
     &:hover{
-      color: ${props => props.theme.color.blue};
+      color: ${props => props.theme.color.grey};
     }
   }
 `
