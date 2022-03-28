@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Footer from "../../Footer/Footer";
-import Header from "../../Header/Header";
 import { LandingWrapper } from "./Landing.style";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../../styles/Theme";
@@ -25,7 +24,7 @@ const Landing = () => {
       <InitialMotion showInitialMotion={showInitialMotion}/>
       {!showInitialMotion &&
       <LandingWrapper>
-        <Header/>
+        {/* <Header/> */}
         <Hero/>
         <LandingWork/>
         <LandingAbout/>

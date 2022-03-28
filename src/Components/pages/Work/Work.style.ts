@@ -17,7 +17,7 @@ export const WorkTitles = styled.div`
 
   & .title{
     width: 100%;
-    height: 5rem;
+    height: 10rem;
     display: grid;
     align-items: center;
     background-color: ${props => props.theme.color.cream};

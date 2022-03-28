@@ -7,9 +7,6 @@ export const HeaderWrapper = styled.div`
   width: 100%;
   height: 5rem;
   padding: 0 1rem;
-  backdrop-filter: blur(0px);
-  -webkit-backdrop-filter: blur(0px);
-  background: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,9 +14,6 @@ export const HeaderWrapper = styled.div`
   
   @media ${props => props.theme.device.laptop} {
     padding: 0 3rem;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    background: rgba(255, 255, 255, 0.3);
   }
 
   & .logo-wrapper-img{

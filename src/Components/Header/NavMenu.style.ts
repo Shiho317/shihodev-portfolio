@@ -52,8 +52,12 @@ export const NavButton = styled.div`
     & .resume{
       display: flex;
       align-items: center;
-      padding: 0 0.4rem;
-      background-color: rgba(240,229,207,0.5);
+      background-color: rgba(200,198,198,0.5);
+
+      @media ${props => props.theme.device.laptop} {
+        padding: 0 0.4rem;
+        background-color: rgba(240,229,207,0.5);
+      }
     }
   }
 

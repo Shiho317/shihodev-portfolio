@@ -6,33 +6,34 @@ import { MdSaveAlt } from 'react-icons/md';
 
 type Props = {
   isHamburgerOpen: boolean;
+  setIsHamburgerOpen: any;
 }
 
-const NavMenu: React.FC<Props> = ({isHamburgerOpen}) => {
+const NavMenu: React.FC<Props> = ({isHamburgerOpen, setIsHamburgerOpen}) => {
   return(
     <ShownButton style={{
       transform: isHamburgerOpen ? 'translateX(0%)' : 'translateX(120%)', 
       visibility: isHamburgerOpen ? 'visible' : 'hidden'}}>
       <NavButton>
         <ul>
-          <li>
+          <li onClick={() => setIsHamburgerOpen(false)}>
             <Link to='/work'>
             work
             </Link>
           </li>
-          <li>
+          <li onClick={() => setIsHamburgerOpen(false)}>
             <Link to='/about'>
             about
             </Link>
           </li>
-          <li>
+          <li onClick={() => setIsHamburgerOpen(false)}>
             <Link to='/contact'>
             contact
             </Link>
           </li>
-          <li>
+          <li onClick={() => setIsHamburgerOpen(false)}>
             <a href='ShihoNagano-Résumé.pdf' download='ShihoNagano-Résumé.pdf' className="resume">
-              <p>resume</p>
+              resume
               <MdSaveAlt/>
             </a>
           </li>
