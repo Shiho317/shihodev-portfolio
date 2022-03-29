@@ -10,6 +10,10 @@ align-items: center;
 
 p{
   color: ${props => props.theme.color.beige};
-  font-size: 0.8rem;
+  font-size: 0.5rem;
+
+  @media ${props => props.theme.device.laptop} {
+    font-size: 0.8rem;
+  }
 }
 `

@@ -1,15 +1,33 @@
 import { Link } from "react-router-dom";
-import { HeaderWrapper, Icons, NavButton } from "./Header.style";
+import { HeaderWrapper } from "./Header.style";
 import LogoSvg from "./Logo.svg";
-import { SiDiscord } from 'react-icons/si';
-import { FiLinkedin, FiGithub, FiMail } from 'react-icons/fi';
-import { MdSaveAlt } from 'react-icons/md';
-// import ResumePDF from '../../assets/shihonagano-resume.pdf';
+import { useEffect, useState } from "react";
+import HamburgerMenu from "./HamburgerMenu";
+import NavMenu from "./NavMenu";
+import { ThemeProvider } from "styled-components";
+import { theme } from "../../styles/Theme";
 
 const Header = () => {
 
+  const [ isHamburgerOpen, setIsHamburgerOpen ] = useState(false);
+
+  const [ positionTop, setPositionTop ] = useState(false);
+
+  useEffect(() => {
+    const topOffset = () => {
+      const topY = window.pageYOffset;
+      if(topY > 10){
+        setPositionTop(true)
+      }else if(topY <= 10){
+        setPositionTop(false)
+      }
+    };
+    window.addEventListener('scroll', topOffset)
+  },[setPositionTop])
+
   return(
-      <HeaderWrapper>
+    <ThemeProvider theme={theme}>
+      <HeaderWrapper style={{background: positionTop ? 'rgba(255, 255, 255, 0.3)' : 'transparent', backdropFilter: positionTop? 'blur(4px)' : 'blur(0px)'} }>
         <div className="logo-wrapper">
           <Link to='/'>
             <div className="logo-wrapper-img">
@@ -17,54 +35,10 @@ const Header = () => {
             </div>
           </Link>
         </div>
-        <NavButton>
-          <ul>
-            <li>
-              <Link to='/work'>
-                work
-              </Link>
-            </li>
-            <li>
-              <Link to='/about'>
-                about
-              </Link>
-            </li>
-            <li>
-              <Link to='/contact'>
-                contact
-              </Link>
-            </li>
-            <li>
-              <a href='ShihoNagano-Résumé.pdf' download='ShihoNagano-Résumé.pdf' className="resume">
-                <p>resume</p>
-                <MdSaveAlt/>
-              </a>
-            </li>
-          </ul>
-        </NavButton>
-        <Icons>
-          <a href="https://www.linkedin.com/in/shiho-nagano-b7518b21b" target="_blank" rel="noopener noreferrer">
-            <div className="icons-wrap">
-              <FiLinkedin/>
-            </div>
-          </a>
-          <a href="https://discord.gg/XGhFwCnS" target="_blank" rel="noopener noreferrer">
-            <div className="icons-wrap">
-              <SiDiscord/>
-            </div>
-          </a>
-          <a href="https://github.com/Shiho317" target="_blank" rel="noopener noreferrer">
-            <div className="icons-wrap">
-              <FiGithub/>
-            </div>
-          </a>
-          <a href="mailto:shihonagano9797@gmail.com">
-            <div className="icons-wrap">
-              <FiMail/>
-            </div>
-          </a>
-        </Icons>
+        <NavMenu isHamburgerOpen={isHamburgerOpen} setIsHamburgerOpen={setIsHamburgerOpen}/>
+        <HamburgerMenu isOpen={isHamburgerOpen} setOpen={setIsHamburgerOpen}/>
       </HeaderWrapper>
+    </ThemeProvider>
   )
 };
 

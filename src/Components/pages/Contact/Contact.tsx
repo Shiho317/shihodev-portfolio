@@ -1,5 +1,4 @@
 import Footer from "../../Footer/Footer";
-import Header from "../../Header/Header";
 import { ContactContents, ContactTitles, ContactWrapper, Icons } from "./Contact.style";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../../styles/Theme";
@@ -11,7 +10,6 @@ const Contact = () => {
   return(
     <ThemeProvider theme={theme}>
       <ContactWrapper>
-          <Header/>
             <ContactContents>
               <ContactTitles>
                 <div className="titles-wrapper">
@@ -20,7 +18,7 @@ const Contact = () => {
                 </div>
                 <div className="icons-wrapper">
                   <div className="borders">
-                    <hr className="border"/>or<hr className="border"/>
+                    <hr className="border"/><p>or</p><hr className="border"/>
                   </div>
                   <p>You can get in touch with me via my social</p>
                   <Icons>

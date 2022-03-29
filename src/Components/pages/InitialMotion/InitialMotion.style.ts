@@ -21,8 +21,12 @@ export const Intro = styled.div`
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 2rem;
+  font-size: 1rem;
   color: ${props => props.theme.color.beige};
+
+  @media ${props => props.theme.device.laptop} {
+    font-size: 2rem;
+  }
 `
 
 export const MyTitle = styled.div`
@@ -34,8 +38,13 @@ export const MyTitle = styled.div`
 `
 
 export const LogoImg = styled.div`
-  width: 5rem;
-  height: 5rem;
+  width: 3rem;
+  height: 3rem;
+
+  @media ${props => props.theme.device.laptop} {
+    width: 5rem;
+    height: 5rem;
+  }
 
   & img{
     position: absolute;
@@ -43,7 +52,11 @@ export const LogoImg = styled.div`
     left: 0;
     opacity: 0;
     display: none;
-    width: 5rem;
+    width: 3rem;
+
+    @media ${props => props.theme.device.laptop} {
+      width: 5rem;
+    }
   }
 `
 
@@ -51,12 +64,18 @@ export const AnimatedTitle = styled.div`
   width: 100%;
 
   & h1{
+    width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -45px;
+    
+    @media ${props => props.theme.device.laptop} {
+      top: 0;
+      left: 0;
+    }
   }
 
   & .emphasize{
-    color: ${props => props.theme.color.cream}
+    color: ${props => props.theme.color.cream};
   }
 `
