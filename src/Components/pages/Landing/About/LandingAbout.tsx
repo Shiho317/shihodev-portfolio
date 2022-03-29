@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { 
   AboutWrapper, 
   DetailsAboutMe, 
@@ -18,7 +19,9 @@ const LandingAbout = () => {
         </div>
         <div className="to-about-btn">
           <h3>\ Interested in ME?? Let me tell you about me more!! /</h3>
-          <button>ABOUT ME</button>
+          <Link to='/about'>
+            <button>ABOUT ME</button>
+          </Link>
         </div>
       </DetailsAboutMe>
     </AboutWrapper>

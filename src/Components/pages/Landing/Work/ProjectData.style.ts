@@ -11,6 +11,9 @@ export const ProjectDetails = styled.div`
   background-color: ${props => props.theme.color.cream};
 
   & .project-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 
     & img{

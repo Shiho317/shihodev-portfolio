@@ -28,7 +28,7 @@ const DataList: React.FC<Props> = ({project, index}) => {
 
   return(
     <Fade direction='up' duration={500} triggerOnce>
-      <Project style={ {flexDirection: index % 2 === 0 ? 'row-reverse' : 'row'} }>
+      <Project id={`id-${index}`} style={ {flexDirection: index % 2 === 0 ? 'row-reverse' : 'row'} }>
         <div className='explanation'>
           <Skill>
             {project.skills.map((skill, index) => (
@@ -46,10 +46,10 @@ const DataList: React.FC<Props> = ({project, index}) => {
             ))}
           </Description>
           <Buttons>
-            <a href={project.github}>
+            <a href={project.github} target="_blank" rel="noopener noreferrer">
               <button className='github-link'>GitHub</button>
             </a>
-            <a href={project.url}>
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
               <button className='open-link'>Open</button>
             </a>
           </Buttons>

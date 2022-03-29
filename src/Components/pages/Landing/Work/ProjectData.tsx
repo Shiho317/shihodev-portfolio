@@ -45,7 +45,7 @@ const ProjectData: React.FC<Props> = ({project, isActive, index, addActiveClass}
           <ProjectIcon href={project.url} target="_blank" rel="noopener noreferrer">
             <FiPaperclip/>
           </ProjectIcon>
-          <ProjectIcon href='{project.url}'>
+          <ProjectIcon href={`/work#id-${index}`}>
             <BiCommentDetail/>
           </ProjectIcon>
         </div>

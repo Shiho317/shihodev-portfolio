@@ -35,7 +35,7 @@ const About = () => {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, vero placeat possimus, earum ad quae voluptatum quos, provident at id velit doloribus culpa. Alias porro, provident quasi ea odit ducimus?
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, quibusdam nostrum. Tempore suscipit, quos commodi sit perspiciatis nihil tenetur, maiores molestiae autem sequi quod! Ad praesentium sint repellat deleniti! Optio!
             </p>
-            <Link to='/'>
+            <Link to='/contact'>
               <Button>CONTACT ME</Button>
             </Link>
             </Introwrapper>
