@@ -64,13 +64,18 @@ export const AnimatedTitle = styled.div`
   width: 100%;
 
   & h1{
+    width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -45px;
     
+    @media ${props => props.theme.device.laptop} {
+      top: 0;
+      left: 0;
+    }
   }
 
   & .emphasize{
-    color: ${props => props.theme.color.cream}
+    color: ${props => props.theme.color.cream};
   }
 `

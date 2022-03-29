@@ -21,20 +21,20 @@ const InitialMotion:React.FC<Props> = ({showInitialMotion}) => {
           <AnimatedTitle>
             <motion.h1 
               style={{opacity: 0}} 
-              animate={{x: '50%', opacity: 1}} 
+              animate={{x: 100, opacity: 1}} 
               transition={{duration: 1, delay: 1, ease: 'easeInOut', repeat: 1, repeatType: 'reverse'}}>
               HIHO
             </motion.h1>
             <motion.h1
               style={{opacity: 0}} 
-              animate={{x: '50%', opacity: 1}} 
+              animate={{x: 100, opacity: 1}} 
               transition={{duration: 1, delay: 3, ease: 'easeInOut', repeat: 1, repeatType: 'reverse'}}>
               AGANO
             </motion.h1>
             <motion.h1
               className="emphasize"
               style={{opacity: 0}} 
-              animate={{x: '50%', opacity: 1}} 
+              animate={{x: 100, opacity: 1}} 
               transition={{duration: 1, delay: 5, ease: 'easeInOut'}}>
               A FRONT-END DEVELOPER
             </motion.h1>
