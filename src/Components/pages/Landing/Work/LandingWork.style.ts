@@ -16,9 +16,13 @@ export const Projects = styled.div`
   height: 60%;
   display: flex;
   flex-wrap: wrap;
-  
 
+  @media ${props => props.theme.device.tablet} {
+    width: 55%;
+  }
+  
   @media ${props => props.theme.device.laptop} {
+    width: 80%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -41,13 +45,21 @@ export const Projects = styled.div`
     overflow: hidden;
     transform-style: flat;
     transform: rotateY(0);
+
+    @media ${props => props.theme.device.tablet} {
+      width: 30%;
+    }
     
     @media ${props => props.theme.device.laptop} {
-      width: 10rem;
-      height: 60vh;
       transform-style: preserve-3d;
       transform: rotateY(-60deg);
+      width: 10rem;
+      height: 60vh;
       border-radius: 10px;
+    }
+
+    @media ${props => props.theme.device.desktop} {
+      width: 10%;
     }
   }
 
@@ -56,8 +68,19 @@ export const Projects = styled.div`
     height: 25vh;
     transform: rotateY(0deg);
 
+    @media ${props => props.theme.device.mobileM} {
+      height: 28vh;
+    }
+
+    @media ${props => props.theme.device.mobileL} {
+      height: 32vh;
+    }
+
+    @media ${props => props.theme.device.tablet} {
+      height: 40vh;
+    }
+
     @media ${props => props.theme.device.laptop} {
-      width: 100%;
       height: 100%;
     }
   }
@@ -73,9 +96,9 @@ export const Projects = styled.div`
 
 export const Button = styled.button`
   position: relative;
-  width: 15rem;
-  height: 3rem;
-  font-size: 1.2rem;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 0.8rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -83,6 +106,12 @@ export const Button = styled.button`
   background-color: ${props => props.theme.color.blue};
   color: ${props => props.theme.color.beige};
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+  @media ${props => props.theme.device.laptop} {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
 
   &:hover{
     background-color: ${props => props.theme.color.grey};

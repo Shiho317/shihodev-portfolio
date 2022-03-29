@@ -15,8 +15,17 @@ export const ProjectDetails = styled.div`
 
     & img{
       width: 100%;
+
       @media ${props => props.theme.device.laptop} {
+        width: 40rem;
+      }
+
+      @media ${props => props.theme.device.laptopL} {
         width: 45rem;
+      }
+
+      @media ${props => props.theme.device.desktop} {
+        width: 86rem;
       }
     }
   }
@@ -66,6 +75,12 @@ export const ProjectIcon = styled.a`
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.5rem;
+  }
+
+  @media ${props => props.theme.device.desktop} {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
   }
 
   &:hover{

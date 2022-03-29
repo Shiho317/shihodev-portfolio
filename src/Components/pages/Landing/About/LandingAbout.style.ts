@@ -69,9 +69,9 @@ export const DetailsAboutMe = styled.div`
     }
 
     & button{
-      font-size: 1.2rem;
-      width: 15rem;
-      height: 3rem;
+      width: 10rem;
+      height: 2.5rem;
+      font-size: 0.8rem;
       background-color: ${props => props.theme.color.cream};
       color: ${props => props.theme.color.blue};
       border: none;
@@ -79,6 +79,12 @@ export const DetailsAboutMe = styled.div`
       cursor: pointer;
       outline: none;
       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+      @media ${props => props.theme.device.laptop} {
+        width: 15rem;
+        height: 3rem;
+        font-size: 1.2rem;
+      }
 
       &:hover{
         color: ${props => props.theme.color.blue};
