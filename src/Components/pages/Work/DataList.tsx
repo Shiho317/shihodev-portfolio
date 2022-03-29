@@ -2,6 +2,7 @@
 import { Project, Skill, Description, Buttons, Demo } from './DataList.style';
 import { BsCheck2Square } from 'react-icons/bs';
 import { useCallback, useState } from 'react';
+import { Fade } from "react-awesome-reveal";
 
 type Props = {
   project: {
@@ -26,7 +27,8 @@ const DataList: React.FC<Props> = ({project, index}) => {
   }, [])
 
   return(
-    <Project style={ {flexDirection: index % 2 === 0 ? 'row-reverse' : 'row'} }>
+    <Fade direction='up' duration={500} triggerOnce>
+      <Project style={ {flexDirection: index % 2 === 0 ? 'row-reverse' : 'row'} }>
         <div className='explanation'>
           <Skill>
             {project.skills.map((skill, index) => (
@@ -55,7 +57,8 @@ const DataList: React.FC<Props> = ({project, index}) => {
         <Demo>
           <img src={isHover ? project.gif : project.thumbnail} alt="gif" onMouseOver={isHoverOn} onMouseOut={isHoverOn}/>
         </Demo>
-    </Project>
+      </Project>
+    </Fade>
   )
 };
 
