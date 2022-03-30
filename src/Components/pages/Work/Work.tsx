@@ -2,7 +2,6 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '../../../styles/Theme';
 import ProjectData from '../../../assets/ProjectData.json';
 import { Projects, WorkContents, WorkTitles, WorkWrapper } from './Work.style';
-import Footer from '../../Footer/Footer';
 import DataList from './DataList';
 
 
@@ -25,7 +24,6 @@ const Work = () => {
             </Projects>
           </WorkTitles>
         </WorkContents>
-        <Footer/>
       </WorkWrapper>
     </ThemeProvider>
   )

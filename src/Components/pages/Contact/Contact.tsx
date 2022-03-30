@@ -1,4 +1,3 @@
-import Footer from "../../Footer/Footer";
 import { ContactContents, ContactTitles, ContactWrapper, Icons } from "./Contact.style";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../../styles/Theme";
@@ -47,7 +46,6 @@ const Contact = () => {
               </ContactTitles>
               <ContactForm/>
             </ContactContents>
-          <Footer/>
       </ContactWrapper>
     </ThemeProvider>
   )

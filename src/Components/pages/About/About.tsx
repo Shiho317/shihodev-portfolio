@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../../styles/Theme";
-import Footer from "../../Footer/Footer";
 import { AboutContents, AboutLeft, AboutRight, AboutWrapper, Button, Introwrapper, SelfImg } from "./About.style";
 import selfImg from '../../../assets/images/aboutme-img.png';
 import Skills from "./Skills";
@@ -41,7 +40,6 @@ const About = () => {
             </Introwrapper>
           </AboutRight>
         </AboutContents>
-        <Footer/>
       </AboutWrapper>
     </ThemeProvider>
   )
