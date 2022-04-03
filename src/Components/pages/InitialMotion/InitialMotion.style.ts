@@ -25,6 +25,7 @@ export const Intro = styled.div`
   color: ${props => props.theme.color.beige};
 
   @media ${props => props.theme.device.laptop} {
+    width: 75%;
     font-size: 2rem;
   }
 `
