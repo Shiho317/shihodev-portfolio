@@ -21,11 +21,11 @@ export const AboutLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
 
   @media ${props => props.theme.device.laptop} {
     flex: 1;
-    gap: 5rem;
+    gap: 3rem;
   }
 
   & .title{
@@ -53,21 +53,21 @@ export const AboutLeft = styled.div`
 `
 
 export const SelfImg = styled.div`
-  width: 10rem;
+  width: 7.5rem;
   height: 7.5rem;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50% 80% 70% 50% / 40% 80% 70% 60%;
-  background-color: ${props => props.theme.color.cream};
+  border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 
   @media ${props => props.theme.device.laptop} {
     width: 20rem;
-    height: 15rem;
+    height: 20rem;
   }
 
   & img{
-    width: 10rem;
+    width: 7.5rem;
     transition: all 0.5s ease;
 
     @media ${props => props.theme.device.laptop} {
