@@ -82,7 +82,12 @@
       "url": "",
       "github": "https://github.com/Shiho317/shihodev-portfolio",
       "skills": ["react", "typescript", "styled-components", "framer-motion"],
-      "descriptions": [""]
+      "descriptions": [
+        "A portfolio website that produce myself and showing my project.",
+        "Created design all by myself and made all logos and images by using Inkscape and Figma.",
+        "Used framer-motion to make images or logos efficiently and impressively.",
+        "Created contact form that make user can contact me from website and provide them auto reply."
+      ]
     }
   ]
 }
