@@ -37,6 +37,7 @@ export const SvgStyle = styled.div`
 `
 
 export const Wagara = styled.div`
+  height: 100%;
   flex: 1;
 `
 

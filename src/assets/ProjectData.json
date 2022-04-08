@@ -79,7 +79,7 @@
       "type": ["website", "solo project"],
       "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1649005912/ShihoDev-Portfolio/shihoN-portfolio_i5p5rx.jpg",
       "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1649006879/ShihoDev-Portfolio/shihoN-portfolio_w8hnhk.gif",
-      "url": "",
+      "url": "https://shiho-nagano.com",
       "github": "https://github.com/Shiho317/shihodev-portfolio",
       "skills": ["react", "typescript", "styled-components", "framer-motion"],
       "descriptions": [
