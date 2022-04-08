@@ -60,29 +60,34 @@
       ]
     },
     {
-      "title": "InforMATE",
+      "title": "Exchanger",
       "type": ["application", "solo project"],
-      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647651552/ShihoDev-Portfolio/informate_zmqt0l.jpg",
-      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647650528/ShihoDev-Portfolio/informate_eejxhb.gif",
-      "url": "https://trusting-wilson-3e96c1.netlify.app/",
-      "github": "https://github.com/Shiho317/react-app-informate",
-      "skills": ["react", "scss"],
+      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1648944827/ShihoDev-Portfolio/exchangerApp_urn75a.jpg",
+      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1648944839/ShihoDev-Portfolio/exchangerApp_thmymm.gif",
+      "url": "https://exchanger-opal.vercel.app/",
+      "github": "https://github.com/Shiho317/Exchanger",
+      "skills": ["react", "css", "exchange rates API", "chartjs"],
       "descriptions": [
-        "A web application that is created by imagination of sharing useful information with others.", 
-        "Has a function for logging in, creating account and tweeting.", 
-        "Available to change account information and icon image.", 
-        "Background of account page change depends on the country you choose."
+        "Exchange currency calculator application that provides foreign exchange rates.", 
+        "Able to check weekly changes of chosen rates.", 
+        "Able to check all foreign exchange currency and show change percentage between yesterday.",
+        "Part of challenge is managing API data."
       ]
     },
     {
       "title": "Shiho N Portfolio",
       "type": ["website", "solo project"],
-      "thumbnail": "",
-      "gif": "",
+      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1649005912/ShihoDev-Portfolio/shihoN-portfolio_i5p5rx.jpg",
+      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1649006879/ShihoDev-Portfolio/shihoN-portfolio_w8hnhk.gif",
       "url": "",
-      "github": "",
-      "skills": ["react", "typescript", "styled-components"],
-      "descriptions": [""]
+      "github": "https://github.com/Shiho317/shihodev-portfolio",
+      "skills": ["react", "typescript", "styled-components", "framer-motion"],
+      "descriptions": [
+        "A portfolio website that produce myself and showing my project.",
+        "Created design all by myself and made all logos and images by using Inkscape and Figma.",
+        "Used framer-motion to make images or logos efficiently and impressively.",
+        "Created contact form that make user can contact me from website and provide them auto reply."
+      ]
     }
   ]
 }
