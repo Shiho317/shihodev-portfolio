@@ -1,4 +1,9 @@
-import { ContactContents, ContactTitles, ContactWrapper, Icons } from "./Contact.style";
+import { 
+  ContactContents, 
+  ContactTitles, 
+  ContactWrapper, 
+  Icons 
+} from "./Contact.style";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../../styles/Theme";
 import ContactForm from "../Landing/Contact/ContactForm";

@@ -1,4 +1,12 @@
-import { HeroWrapper, HeroContents, SvgStyle, Geisha, HeroTitle, TitleContents, Wagara } from "./Hero.style";
+import { 
+  HeroWrapper, 
+  HeroContents, 
+  SvgStyle, 
+  Geisha, 
+  HeroTitle, 
+  TitleContents, 
+  Wagara 
+} from "./Hero.style";
 import WagaraSvg from "../../../Animation/Wagara.svg";
 import GeishaSvg from "../../../Animation/Geisha.svg";
 import CodingSvg from "../../../Animation/Coding.svg";

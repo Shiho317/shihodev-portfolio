@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../../styles/Theme";
-import { AboutContents, AboutLeft, AboutRight, AboutWrapper, Button, Introwrapper, SelfImg } from "./About.style";
+import { 
+  AboutContents, 
+  AboutLeft, 
+  AboutRight, 
+  AboutWrapper, 
+  Button, 
+  Introwrapper, 
+  SelfImg 
+} from "./About.style";
 import Skills from "./Skills";
 
 const About = () => {

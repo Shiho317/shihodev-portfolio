@@ -9,6 +9,7 @@ import About from './Components/pages/About/About';
 import Contact from './Components/pages/Contact/Contact';
 import Landing from './Components/pages/Landing/Landing';
 import Work from './Components/pages/Work/Work';
+import ScrollToTop from './Components/ScrollToTop';
 import { GlobalStyle } from './styles/GlobalStyles';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <div>
       <GlobalStyle/>
       <Router>
+        <ScrollToTop/>
         <Header/>
         <Routes>
           <Route path='/' element={<Landing/>}/>

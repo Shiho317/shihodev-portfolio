@@ -1,4 +1,10 @@
-import { AnimatedTitle, InitialMotionWrapper, Intro, LogoImg, MyTitle } from "./InitialMotion.style";
+import { 
+  AnimatedTitle, 
+  InitialMotionWrapper, 
+  Intro, 
+  LogoImg, 
+  MyTitle 
+} from "./InitialMotion.style";
 import logo from '../../../assets/images/shihoN-logo.svg';
 import { motion } from "framer-motion";
 

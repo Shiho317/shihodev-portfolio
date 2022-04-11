@@ -1,4 +1,10 @@
-import { Project, Skill, Description, Buttons, Demo } from './DataList.style';
+import { 
+  Project, 
+  Skill, 
+  Description, 
+  Buttons, 
+  Demo 
+} from './DataList.style';
 import { BsCheck2Square } from 'react-icons/bs';
 import { useCallback, useState } from 'react';
 import { Fade } from "react-awesome-reveal";

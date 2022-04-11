@@ -1,7 +1,12 @@
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../../../styles/Theme';
 import ProjectData from '../../../assets/ProjectData.json';
-import { Projects, WorkContents, WorkTitles, WorkWrapper } from './Work.style';
+import { 
+  Projects, 
+  WorkContents, 
+  WorkTitles, 
+  WorkWrapper 
+} from './Work.style';
 import DataList from './DataList';
 
 
