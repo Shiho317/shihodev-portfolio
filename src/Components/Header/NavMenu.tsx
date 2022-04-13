@@ -6,7 +6,7 @@ import { MdSaveAlt } from 'react-icons/md';
 
 type Props = {
   isHamburgerOpen: boolean;
-  setIsHamburgerOpen: any;
+  setIsHamburgerOpen: (isHamburgerOpen: boolean) => void;
 }
 
 const NavMenu: React.FC<Props> = ({isHamburgerOpen, setIsHamburgerOpen}) => {

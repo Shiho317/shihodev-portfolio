@@ -3,13 +3,25 @@ import { HamburgerWrap } from './Header.style';
 
 type Props = {
   isOpen: boolean;
-  setOpen: any;
+  setOpen: (isOpen: boolean) => void;
 }
 
 const HamburgerMenu: React.FC<Props> = ({isOpen, setOpen}) => {
+
+  const onToggle = () => {
+    setOpen(!isOpen)
+  };
+
   return(
     <HamburgerWrap>
-    <Hamburger toggled={isOpen} toggle={setOpen} direction="left" color='#4b6587' size={25} duration={0.3}/>
+    <Hamburger 
+      direction="left" 
+      color='#4b6587' 
+      size={25} 
+      duration={0.3}
+      toggled={isOpen}
+      onToggle={onToggle}
+    />
     </HamburgerWrap>
   )
 };

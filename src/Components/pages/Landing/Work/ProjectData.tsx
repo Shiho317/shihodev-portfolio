@@ -17,7 +17,7 @@ type Props = {
     skills: string[];
     descriptions: string[];
   };
-  addActiveClass: any;
+  addActiveClass: (index: number) => void;
 }
 
 const ProjectData: React.FC<Props> = ({project, isActive, index, addActiveClass}) => {
