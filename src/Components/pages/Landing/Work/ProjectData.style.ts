@@ -56,6 +56,36 @@ export const ProjectDetails = styled.div`
     opacity: 1;
   }
 
+  & .work-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    color: ${props => props.theme.color.blue};
+    background-color: ${props => props.theme.color.beige};
+
+    @media ${props => props.theme.device.laptop} {
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+    }
+  
+    @media ${props => props.theme.device.desktop} {
+      width: 3rem;
+      height: 3rem;
+      font-size: 2rem;
+    }
+  
+    &:hover{
+      background-color: ${props => props.theme.color.blue};
+      color: ${props => props.theme.color.beige};
+      transition: all 0.3s ease;
+    }
+  }
+
   & .hidden{
     display: none;
     opacity: 0;

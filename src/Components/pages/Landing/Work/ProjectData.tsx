@@ -1,3 +1,4 @@
+import { NavHashLink } from 'react-router-hash-link';
 import { ProjectDetails, ProjectIcon } from './ProjectData.style';
 import { CgWebsite } from 'react-icons/cg';
 import { AiOutlineAppstoreAdd } from 'react-icons/ai';
@@ -45,9 +46,9 @@ const ProjectData: React.FC<Props> = ({project, isActive, index, addActiveClass}
           <ProjectIcon href={project.url} target="_blank" rel="noopener noreferrer">
             <FiPaperclip/>
           </ProjectIcon>
-          <ProjectIcon href={`/work#id-${index}`}>
+          <NavHashLink className='work-icon' to={`/work#id-${index}`}>
             <BiCommentDetail/>
-          </ProjectIcon>
+          </NavHashLink>
         </div>
       </ProjectDetails>
     </div>
