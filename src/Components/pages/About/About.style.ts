@@ -97,7 +97,7 @@ export const Introwrapper = styled.div`
 
   @media ${props => props.theme.device.laptop} {
     align-items: start;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   & h3{
@@ -105,7 +105,7 @@ export const Introwrapper = styled.div`
     color: ${props => props.theme.color.blue};
 
     @media ${props => props.theme.device.laptop} {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 
@@ -116,7 +116,7 @@ export const Introwrapper = styled.div`
     color: ${props => props.theme.color.blue};
   
     @media ${props => props.theme.device.laptop} {
-      height: 100%;
+      height: 80%;
       font-size: 1.1rem;
     }
   }
