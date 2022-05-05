@@ -22,7 +22,9 @@ import {
   SiFramer, 
   SiFigma, 
   SiInkscape, 
-  SiGit 
+  SiGit,
+  SiGraphql,
+  SiApollographql
 } from 'react-icons/si';
 
 const Skills = () => { 
@@ -76,6 +78,14 @@ const Skills = () => {
       <Skill>
         <p>Express</p>
         <SiExpress/>
+      </Skill>
+      <Skill>
+        <p>graphQL</p>
+        <SiGraphql/>
+      </Skill>
+      <Skill>
+        <p>Apollo</p>
+        <SiApollographql/>
       </Skill>
       <Skill>
         <p>PHP</p>
