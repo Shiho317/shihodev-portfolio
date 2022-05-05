@@ -7,11 +7,19 @@
       "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1651721233/ShihoDev-Portfolio/suki-sushi_awivsg.gif",
       "url": "https://cryptic-oasis-17891.herokuapp.com/",
       "github": "https://github.com/Shiho317/Sushi-app",
-      "skills": ["react", "node.js", "express.js", "css", "graphql", "apollo", "mongodb"],
+      "skills": [
+        "react",
+        "node.js",
+        "express.js",
+        "css",
+        "graphql",
+        "apollo",
+        "mongodb"
+      ],
       "descriptions": [
-        "Map application which provides location of sushi restaurant in Vancouver, CA.", 
-        "Using graphQL and Apollo to fetch Yelp API for datas about sushi restaurants.", 
-        "Click a pin to see a restaurant detail and add to your favourite.", 
+        "Map application which provides location of sushi restaurant in Vancouver, CA.",
+        "Using graphQL and Apollo to fetch Yelp API for datas about sushi restaurants.",
+        "Click a pin to see a restaurant detail and add to your favourite.",
         "Using MongoDB to store database for account and favourite restaurants."
       ]
     },
@@ -24,9 +32,9 @@
       "github": "https://github.com/Shiho317/ECapp-typescript",
       "skills": ["react", "typescript", "styled-components", "material-ui"],
       "descriptions": [
-        "E-Commerce website that is built with React and Typescript.", 
-        "Created json file to storage items and users.", 
-        "Created shopping cart modal which shows you items that are in your cart and total cost.", 
+        "E-Commerce website that is built with React and Typescript.",
+        "Created json file to storage items and users.",
+        "Created shopping cart modal which shows you items that are in your cart and total cost.",
         "Used styled-component and Material UI for styling."
       ]
     },
@@ -39,8 +47,8 @@
       "github": "https://github.com/Shiho317/nextjs-weatherApp",
       "skills": ["next.js", "tailwind css", "open weather API"],
       "descriptions": [
-        "A web application that tells the current weather, hourly weather, weekly weather and temperatures in a specific city.", 
-        "The background image will be changed depends on current weather and local time.", 
+        "A web application that tells the current weather, hourly weather, weekly weather and temperatures in a specific city.",
+        "The background image will be changed depends on current weather and local time.",
         "Built with Next.js and Tailwind css, Open Weather API."
       ]
     },
@@ -53,9 +61,9 @@
       "github": "https://github.com/chingu-voyages/v35-geckos-team-08",
       "skills": ["next.js", "node.js", "css"],
       "descriptions": [
-        "A website that has a client who is a DJ in Seattle, US.", 
-        "Created web design based on his request and his favourite.", 
-        "Used Cloudinary for storage data and used Emailjs for receiving, sending auto reply.", 
+        "A website that has a client who is a DJ in Seattle, US.",
+        "Created web design based on his request and his favourite.",
+        "Used Cloudinary for storage data and used Emailjs for receiving, sending auto reply.",
         "Created json file for making it easy to upload his new audio file."
       ]
     },
@@ -68,8 +76,8 @@
       "github": "https://github.com/Shiho317/Exchanger",
       "skills": ["react", "css", "exchange rates API", "chartjs"],
       "descriptions": [
-        "Exchange currency calculator application that provides foreign exchange rates.", 
-        "Able to check weekly changes of chosen rates.", 
+        "Exchange currency calculator application that provides foreign exchange rates.",
+        "Able to check weekly changes of chosen rates.",
         "Able to check all foreign exchange currency and show change percentage between yesterday.",
         "Part of challenge is managing API data."
       ]

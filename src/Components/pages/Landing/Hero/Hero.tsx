@@ -1,43 +1,49 @@
-import { 
-  HeroWrapper, 
-  HeroContents, 
-  SvgStyle, 
-  Geisha, 
-  HeroTitle, 
-  TitleContents, 
-  Wagara 
+import {
+  HeroWrapper,
+  HeroContents,
+  SvgStyle,
+  Geisha,
+  HeroTitle,
+  TitleContents,
+  Wagara,
 } from "./Hero.style";
 import WagaraSvg from "../../../Animation/Wagara.svg";
 import GeishaSvg from "../../../Animation/Geisha.svg";
 import CodingSvg from "../../../Animation/Coding.svg";
 
 const Hero = () => {
-  return(
+  return (
     <HeroWrapper>
       <HeroContents>
         <SvgStyle>
           <Wagara>
-            <WagaraSvg/>
+            <WagaraSvg />
           </Wagara>
           <Geisha>
             <div className="coding">
-              <CodingSvg/>
+              <CodingSvg />
             </div>
             <div className="geisha">
-                <GeishaSvg/>
+              <GeishaSvg />
             </div>
           </Geisha>
         </SvgStyle>
         <HeroTitle>
           <TitleContents>
             <p>I AM</p>
-            <h1>DEV<br/>ELO<br/>PER.</h1>
+            <h1>
+              DEV
+              <br />
+              ELO
+              <br />
+              PER.
+            </h1>
             <p>CODE - DESIGN</p>
           </TitleContents>
         </HeroTitle>
       </HeroContents>
     </HeroWrapper>
-  )
+  );
 };
 
-export default Hero
+export default Hero;

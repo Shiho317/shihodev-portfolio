@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const AboutWrapper = styled.div`
   width: 100%;
-  background-color: ${props => props.theme.color.beige};
-`
+  background-color: ${(props) => props.theme.color.beige};
+`;
 
 export const AboutContents = styled.div`
   width: 100%;
@@ -11,10 +11,10 @@ export const AboutContents = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     flex-direction: row;
   }
-`
+`;
 
 export const AboutLeft = styled.div`
   display: flex;
@@ -23,34 +23,34 @@ export const AboutLeft = styled.div`
   align-items: center;
   gap: 1.5rem;
 
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     flex: 1;
     gap: 3rem;
   }
 
-  & .title{
+  & .title {
     width: 100%;
     height: 10rem;
     display: grid;
     align-items: center;
     justify-content: center;
-    background-color: ${props => props.theme.color.cream};
+    background-color: ${(props) => props.theme.color.cream};
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       height: 15rem;
     }
 
-    & h1{
+    & h1 {
       text-align: start;
       font-size: 2rem;
-      color: ${props => props.theme.color.blue};
+      color: ${(props) => props.theme.color.blue};
 
-      @media ${props => props.theme.device.laptop} {
+      @media ${(props) => props.theme.device.laptop} {
         font-size: 4.5rem;
       }
     }
   }
-`
+`;
 
 export const SelfImg = styled.div`
   width: 7.5rem;
@@ -61,20 +61,20 @@ export const SelfImg = styled.div`
   align-items: center;
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     width: 20rem;
     height: 20rem;
   }
 
-  & img{
+  & img {
     width: 7.5rem;
     transition: all 0.5s ease;
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       width: 20rem;
     }
   }
-`
+`;
 
 export const AboutRight = styled.div`
   display: flex;
@@ -82,10 +82,10 @@ export const AboutRight = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     flex: 1;
   }
-`
+`;
 
 export const Introwrapper = styled.div`
   width: 70%;
@@ -95,32 +95,32 @@ export const Introwrapper = styled.div`
   justify-content: center;
   gap: 1rem;
 
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     align-items: start;
     gap: 1rem;
   }
 
-  & h3{
+  & h3 {
     font-size: 1.5rem;
-    color: ${props => props.theme.color.blue};
+    color: ${(props) => props.theme.color.blue};
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       font-size: 1.8rem;
     }
   }
 
-  & p{
+  & p {
     height: 10rem;
     overflow: scroll;
     font-size: 0.8rem;
-    color: ${props => props.theme.color.blue};
-  
-    @media ${props => props.theme.device.laptop} {
+    color: ${(props) => props.theme.color.blue};
+
+    @media ${(props) => props.theme.device.laptop} {
       height: 80%;
       font-size: 1.1rem;
     }
   }
-`
+`;
 
 export const Button = styled.button`
   width: 10rem;
@@ -128,23 +128,23 @@ export const Button = styled.button`
   margin-bottom: 2rem;
   font-size: 0.8rem;
   border: none;
-  background-color: ${props => props.theme.color.cream};
-  color: ${props => props.theme.color.blue};
+  background-color: ${(props) => props.theme.color.cream};
+  color: ${(props) => props.theme.color.blue};
   border-radius: 5px;
   cursor: pointer;
   outline: none;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     width: 15rem;
     height: 3rem;
     margin-bottom: 0rem;
     font-size: 1.2rem;
   }
 
-  &:hover{
-    background-color: ${props => props.theme.color.grey};
-    color: ${props => props.theme.color.beige};
+  &:hover {
+    background-color: ${(props) => props.theme.color.grey};
+    color: ${(props) => props.theme.color.beige};
     transition: all 0.3s ease;
   }
-`
+`;

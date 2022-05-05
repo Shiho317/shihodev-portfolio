@@ -15,9 +15,8 @@ export const ShownButton = styled.div`
   background: rgba(240, 229, 207, 0.8);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  
-  
-  @media ${props => props.theme.device.laptop} {
+
+  @media ${(props) => props.theme.device.laptop} {
     gap: 0;
     width: 80%;
     right: 10%;
@@ -26,84 +25,84 @@ export const ShownButton = styled.div`
     justify-content: space-between;
     background: transparent;
   }
-`
+`;
 
 export const NavButton = styled.div`
-  & ul{
+  & ul {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       flex-direction: row;
     }
 
-    & li{
+    & li {
       list-style: none;
       font-size: 1.3rem;
       font-weight: 600;
       transition: all 0.3s ease;
 
-      &:hover{
+      &:hover {
         transform: translateY(-4px);
       }
     }
 
-    & .resume{
+    & .resume {
       display: flex;
       align-items: center;
-      background-color: rgba(200,198,198,0.5);
+      background-color: rgba(200, 198, 198, 0.5);
 
-      @media ${props => props.theme.device.laptop} {
+      @media ${(props) => props.theme.device.laptop} {
         padding: 0 0.4rem;
-        background-color: rgba(240,229,207,0.5);
+        background-color: rgba(240, 229, 207, 0.5);
       }
     }
   }
 
-  & a{
-    color: ${props => props.theme.color.blue};
+  & a {
+    color: ${(props) => props.theme.color.blue};
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s ease;
 
-    &:hover{
-      color: ${props => props.theme.color.grey};
+    &:hover {
+      color: ${(props) => props.theme.color.grey};
     }
   }
-`
+`;
 
 export const Icons = styled.div`
   display: flex;
   justify-content: flex-end;
-  gap: 1rem; 
+  gap: 1rem;
 
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     gap: 2rem;
   }
 
-  & .icons-wrap{
+  & .icons-wrap {
     width: 2rem;
     height: 2rem;
-    border: 2px solid ${props => props.theme.color.grey};
+    border: 2px solid ${(props) => props.theme.color.grey};
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: ${props => props.theme.color.grey};
+    color: ${(props) => props.theme.color.grey};
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       width: 2.3rem;
       height: 2.3rem;
       font-size: 1.3rem;
     }
 
-    &:hover{
+    &:hover {
       transform: translateY(-4px);
-      background-color: ${props => props.theme.color.blue};
+      background-color: ${(props) => props.theme.color.blue};
     }
   }
-`
+`;

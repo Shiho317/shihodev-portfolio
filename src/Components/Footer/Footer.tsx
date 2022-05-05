@@ -3,13 +3,13 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../../styles/Theme";
 
 const Footer = () => {
-  return(
+  return (
     <ThemeProvider theme={theme}>
       <FooterWrapper>
         <p>Copyright ©2022. ShihoN.Dev All Rights Reserved.</p>
       </FooterWrapper>
     </ThemeProvider>
-  )
+  );
 };
 
 export default Footer;

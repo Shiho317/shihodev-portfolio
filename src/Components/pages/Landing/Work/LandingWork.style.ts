@@ -9,7 +9,7 @@ export const WorkWrapper = styled.div`
   align-items: center;
   gap: 4rem;
   overflow: hidden;
-`
+`;
 
 export const Projects = styled.div`
   width: 80%;
@@ -17,11 +17,11 @@ export const Projects = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  @media ${props => props.theme.device.tablet} {
+  @media ${(props) => props.theme.device.tablet} {
     width: 55%;
   }
-  
-  @media ${props => props.theme.device.laptop} {
+
+  @media ${(props) => props.theme.device.laptop} {
     width: 80%;
     display: flex;
     flex-wrap: nowrap;
@@ -32,7 +32,7 @@ export const Projects = styled.div`
     transform: translateZ(60px);
   }
 
-  & .project{
+  & .project {
     position: relative;
     width: 50%;
     height: 9.5vh;
@@ -46,11 +46,11 @@ export const Projects = styled.div`
     transform-style: flat;
     transform: rotateY(0);
 
-    @media ${props => props.theme.device.tablet} {
+    @media ${(props) => props.theme.device.tablet} {
       width: 30%;
     }
-    
-    @media ${props => props.theme.device.laptop} {
+
+    @media ${(props) => props.theme.device.laptop} {
       transform-style: preserve-3d;
       transform: rotateY(-60deg);
       width: 10rem;
@@ -58,41 +58,41 @@ export const Projects = styled.div`
       border-radius: 10px;
     }
 
-    @media ${props => props.theme.device.desktop} {
+    @media ${(props) => props.theme.device.desktop} {
       width: 10%;
     }
   }
 
-  & .active{
+  & .active {
     width: 100%;
     height: 25vh;
     transform: rotateY(0deg);
 
-    @media ${props => props.theme.device.mobileM} {
+    @media ${(props) => props.theme.device.mobileM} {
       height: 28vh;
     }
 
-    @media ${props => props.theme.device.mobileL} {
+    @media ${(props) => props.theme.device.mobileL} {
       height: 32vh;
     }
 
-    @media ${props => props.theme.device.tablet} {
+    @media ${(props) => props.theme.device.tablet} {
       height: 40vh;
     }
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       height: 100%;
     }
   }
 
-  & .prev{
+  & .prev {
     transform: rotateY(0deg);
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       transform: rotateY(60deg);
     }
   }
-`
+`;
 
 export const Button = styled.button`
   position: relative;
@@ -103,19 +103,19 @@ export const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-  background-color: ${props => props.theme.color.blue};
-  color: ${props => props.theme.color.beige};
+  background-color: ${(props) => props.theme.color.blue};
+  color: ${(props) => props.theme.color.beige};
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     width: 15rem;
     height: 3rem;
     font-size: 1.2rem;
   }
 
-  &:hover{
-    background-color: ${props => props.theme.color.grey};
-    color: ${props => props.theme.color.beige};
+  &:hover {
+    background-color: ${(props) => props.theme.color.grey};
+    color: ${(props) => props.theme.color.beige};
     transition: all 0.3s ease;
   }
-`
+`;

@@ -1,9 +1,9 @@
-import { NavHashLink } from 'react-router-hash-link';
-import { ProjectDetails, ProjectIcon } from './ProjectData.style';
-import { CgWebsite } from 'react-icons/cg';
-import { AiOutlineAppstoreAdd } from 'react-icons/ai';
-import { FiGithub, FiPaperclip } from 'react-icons/fi';
-import { BiCommentDetail } from 'react-icons/bi';
+import { NavHashLink } from "react-router-hash-link";
+import { ProjectDetails, ProjectIcon } from "./ProjectData.style";
+import { CgWebsite } from "react-icons/cg";
+import { AiOutlineAppstoreAdd } from "react-icons/ai";
+import { FiGithub, FiPaperclip } from "react-icons/fi";
+import { BiCommentDetail } from "react-icons/bi";
 
 type Props = {
   isActive: number;
@@ -19,40 +19,61 @@ type Props = {
     descriptions: string[];
   };
   addActiveClass: (index: number) => void;
-}
+};
 
-const ProjectData: React.FC<Props> = ({project, isActive, index, addActiveClass}) => {
-  return(
-    <div key={index} 
-          className={index === isActive ? 'project active' : index < isActive ? 'project prev' : 'project'} 
-          onClick={() => addActiveClass(index)}>
+const ProjectData: React.FC<Props> = ({
+  project,
+  isActive,
+  index,
+  addActiveClass,
+}) => {
+  return (
+    <div
+      key={index}
+      className={
+        index === isActive
+          ? "project active"
+          : index < isActive
+          ? "project prev"
+          : "project"
+      }
+      onClick={() => addActiveClass(index)}
+    >
       <ProjectDetails>
-        <div className='project-img'>
+        <div className="project-img">
           <img src={project.thumbnail} alt="project-img" />
         </div>
-        <div className={ index !== isActive ? 'project-type' : 'hidden'}>
+        <div className={index !== isActive ? "project-type" : "hidden"}>
           <ProjectIcon>
-            {project.type[0] === 'website' ? (
-              <CgWebsite/>
+            {project.type[0] === "website" ? (
+              <CgWebsite />
             ) : (
-              <AiOutlineAppstoreAdd/>
+              <AiOutlineAppstoreAdd />
             )}
           </ProjectIcon>
         </div>
-        <div className={ index === isActive ? 'icons' : 'hidden'}>
-          <ProjectIcon href={project.github} target="_blank" rel="noopener noreferrer">
-            <FiGithub/>
+        <div className={index === isActive ? "icons" : "hidden"}>
+          <ProjectIcon
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiGithub />
           </ProjectIcon>
-          <ProjectIcon href={project.url} target="_blank" rel="noopener noreferrer">
-            <FiPaperclip/>
+          <ProjectIcon
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiPaperclip />
           </ProjectIcon>
-          <NavHashLink className='work-icon' to={`/work#id-${index}`}>
-            <BiCommentDetail/>
+          <NavHashLink className="work-icon" to={`/work#id-${index}`}>
+            <BiCommentDetail />
           </NavHashLink>
         </div>
       </ProjectDetails>
     </div>
-  )
-}
+  );
+};
 
 export default ProjectData;

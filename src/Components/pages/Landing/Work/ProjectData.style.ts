@@ -8,35 +8,35 @@ export const ProjectDetails = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: ${props => props.theme.color.cream};
+  background-color: ${(props) => props.theme.color.cream};
 
-  & .project-img{
+  & .project-img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 
-    & img{
+    & img {
       width: 100%;
 
-      @media ${props => props.theme.device.laptop} {
+      @media ${(props) => props.theme.device.laptop} {
         width: 40rem;
       }
 
-      @media ${props => props.theme.device.laptopL} {
+      @media ${(props) => props.theme.device.laptopL} {
         width: 45rem;
       }
 
-      @media ${props => props.theme.device.desktop} {
+      @media ${(props) => props.theme.device.desktop} {
         width: 86rem;
       }
     }
   }
 
-  & .project-type{
+  & .project-type {
     display: none;
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       width: 100%;
       height: 100%;
       display: flex;
@@ -46,7 +46,7 @@ export const ProjectDetails = styled.div`
     }
   }
 
-  & .icons{
+  & .icons {
     width: 100%;
     height: 100%;
     display: flex;
@@ -56,7 +56,7 @@ export const ProjectDetails = styled.div`
     opacity: 1;
   }
 
-  & .work-icon{
+  & .work-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,34 +64,34 @@ export const ProjectDetails = styled.div`
     height: 1.5rem;
     border-radius: 50%;
     font-size: 1rem;
-    color: ${props => props.theme.color.blue};
-    background-color: ${props => props.theme.color.beige};
+    color: ${(props) => props.theme.color.blue};
+    background-color: ${(props) => props.theme.color.beige};
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       width: 2.5rem;
       height: 2.5rem;
       font-size: 1.5rem;
     }
-  
-    @media ${props => props.theme.device.desktop} {
+
+    @media ${(props) => props.theme.device.desktop} {
       width: 3rem;
       height: 3rem;
       font-size: 2rem;
     }
-  
-    &:hover{
-      background-color: ${props => props.theme.color.blue};
-      color: ${props => props.theme.color.beige};
+
+    &:hover {
+      background-color: ${(props) => props.theme.color.blue};
+      color: ${(props) => props.theme.color.beige};
       transition: all 0.3s ease;
     }
   }
 
-  & .hidden{
+  & .hidden {
     display: none;
     opacity: 0;
     transition: all 0.5s ease;
   }
-`
+`;
 
 export const ProjectIcon = styled.a`
   display: flex;
@@ -101,24 +101,24 @@ export const ProjectIcon = styled.a`
   height: 1.5rem;
   border-radius: 50%;
   font-size: 1rem;
-  color: ${props => props.theme.color.blue};
-  background-color: ${props => props.theme.color.beige};
+  color: ${(props) => props.theme.color.blue};
+  background-color: ${(props) => props.theme.color.beige};
 
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.5rem;
   }
 
-  @media ${props => props.theme.device.desktop} {
+  @media ${(props) => props.theme.device.desktop} {
     width: 3rem;
     height: 3rem;
     font-size: 2rem;
   }
 
-  &:hover{
-    background-color: ${props => props.theme.color.blue};
-    color: ${props => props.theme.color.beige};
+  &:hover {
+    background-color: ${(props) => props.theme.color.blue};
+    color: ${(props) => props.theme.color.beige};
     transition: all 0.3s ease;
   }
-`
+`;
