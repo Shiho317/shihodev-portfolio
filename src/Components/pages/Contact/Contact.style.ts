@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const ContactWrapper = styled.div`
   width: 100%;
-  background-color: ${props => props.theme.color.beige};
-`
+  background-color: ${(props) => props.theme.color.beige};
+`;
 
 export const ContactContents = styled.div`
   width: 100%;
@@ -14,16 +14,16 @@ export const ContactContents = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
   }
-`
+`;
 
 export const ContactTitles = styled.div`
-  background-color: ${props => props.theme.color.cream};
+  background-color: ${(props) => props.theme.color.cream};
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,114 +31,112 @@ export const ContactTitles = styled.div`
   padding: 1rem;
   padding-top: 2.5rem;
 
-
-  @media ${props => props.theme.device.laptop} {
+  @media ${(props) => props.theme.device.laptop} {
     padding-top: 0rem;
     gap: 1rem;
   }
 
-  & .titles-wrapper{
+  & .titles-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       gap: 0rem;
     }
-    
-    & h1{
-      font-size: 2rem;
-      color: ${props => props.theme.color.blue};
 
-      @media ${props => props.theme.device.laptop} {
+    & h1 {
+      font-size: 2rem;
+      color: ${(props) => props.theme.color.blue};
+
+      @media ${(props) => props.theme.device.laptop} {
         font-size: 4.5rem;
       }
     }
 
-    & p{
+    & p {
       font-size: 0.8rem;
       margin: 0;
-      color: ${props => props.theme.color.blue};
+      color: ${(props) => props.theme.color.blue};
 
-      @media ${props => props.theme.device.laptop} {
+      @media ${(props) => props.theme.device.laptop} {
         font-size: 1.1rem;
       }
     }
   }
 
-  & .icons-wrapper{
-
-    & .borders{
+  & .icons-wrapper {
+    & .borders {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
-      color: ${props => props.theme.color.grey};
+      color: ${(props) => props.theme.color.grey};
 
-      & .border{
+      & .border {
         border: none;
         width: 40%;
         height: 1px;
-        background-color: ${props => props.theme.color.grey};
+        background-color: ${(props) => props.theme.color.grey};
 
-        @media ${props => props.theme.device.laptop} {
+        @media ${(props) => props.theme.device.laptop} {
           height: 2px;
         }
       }
 
-      & p{
+      & p {
         font-size: 0.8rem;
-        color: ${props => props.theme.color.grey};
+        color: ${(props) => props.theme.color.grey};
 
-        @media ${props => props.theme.device.laptop} {
-        font-size: 1.1rem;
+        @media ${(props) => props.theme.device.laptop} {
+          font-size: 1.1rem;
         }
       }
     }
-    
-    & p{
+
+    & p {
       font-size: 0.8rem;
       margin: 1rem;
-      color: ${props => props.theme.color.blue};
+      color: ${(props) => props.theme.color.blue};
 
-      @media ${props => props.theme.device.laptop} {
+      @media ${(props) => props.theme.device.laptop} {
         font-size: 1.1rem;
       }
     }
   }
-`
+`;
 
 export const Icons = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
-  gap: 1rem; 
+  gap: 1rem;
 
-  & .icons-wrap{
+  & .icons-wrap {
     width: 2rem;
     height: 2rem;
-    border: 2px solid ${props => props.theme.color.blue};
+    border: 2px solid ${(props) => props.theme.color.blue};
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: ${props => props.theme.color.blue};
+    color: ${(props) => props.theme.color.blue};
     font-size: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
 
-    @media ${props => props.theme.device.laptop} {
+    @media ${(props) => props.theme.device.laptop} {
       width: 2.3rem;
       height: 2.3rem;
-      border: 2px solid ${props => props.theme.color.blue};
+      border: 2px solid ${(props) => props.theme.color.blue};
       font-size: 1.3rem;
     }
 
-    &:hover{
-      background-color: ${props => props.theme.color.blue};
-      color: ${props => props.theme.color.cream};
+    &:hover {
+      background-color: ${(props) => props.theme.color.blue};
+      color: ${(props) => props.theme.color.cream};
     }
-}
-`
+  }
+`;

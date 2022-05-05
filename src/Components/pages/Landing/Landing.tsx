@@ -9,28 +9,27 @@ import InitialMotion from "../InitialMotion/InitialMotion";
 import Hero from "./Hero/Hero";
 
 const Landing = () => {
+  const [showInitialMotion, setShowInitialMotion] = useState<boolean>(true);
 
-  const [showInitialMotion, setShowInitialMotion ] = useState<boolean>(true);
-  
   useEffect(() => {
     setTimeout(() => {
       setShowInitialMotion(false);
-    }, 6000)
-  }, [])
+    }, 6000);
+  }, []);
 
-  return(
+  return (
     <ThemeProvider theme={theme}>
-      <InitialMotion showInitialMotion={showInitialMotion}/>
-      {!showInitialMotion &&
-      <LandingWrapper>
-        <Hero/>
-        <LandingWork/>
-        <LandingAbout/>
-        <LandingContact/>
-      </LandingWrapper>
-      }
+      <InitialMotion showInitialMotion={showInitialMotion} />
+      {!showInitialMotion && (
+        <LandingWrapper>
+          <Hero />
+          <LandingWork />
+          <LandingAbout />
+          <LandingContact />
+        </LandingWrapper>
+      )}
     </ThemeProvider>
-  )
+  );
 };
 
 export default Landing;

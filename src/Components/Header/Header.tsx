@@ -8,38 +8,45 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "../../styles/Theme";
 
 const Header = () => {
+  const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 
-  const [ isHamburgerOpen, setIsHamburgerOpen ] = useState(false);
-
-  const [ positionTop, setPositionTop ] = useState(false);
+  const [positionTop, setPositionTop] = useState(false);
 
   useEffect(() => {
     const topOffset = () => {
       const topY = window.pageYOffset;
-      if(topY > 10){
-        setPositionTop(true)
-      }else if(topY <= 10){
-        setPositionTop(false)
+      if (topY > 10) {
+        setPositionTop(true);
+      } else if (topY <= 10) {
+        setPositionTop(false);
       }
     };
-    window.addEventListener('scroll', topOffset)
-  },[setPositionTop])
+    window.addEventListener("scroll", topOffset);
+  }, [setPositionTop]);
 
-  return(
+  return (
     <ThemeProvider theme={theme}>
-      <HeaderWrapper style={{background: positionTop ? 'rgba(255, 255, 255, 0.3)' : 'transparent', backdropFilter: positionTop? 'blur(4px)' : 'blur(0px)'} }>
+      <HeaderWrapper
+        style={{
+          background: positionTop ? "rgba(255, 255, 255, 0.3)" : "transparent",
+          backdropFilter: positionTop ? "blur(4px)" : "blur(0px)",
+        }}
+      >
         <div className="logo-wrapper">
-          <Link to='/'>
+          <Link to="/">
             <div className="logo-wrapper-img">
-              <LogoSvg/>
+              <LogoSvg />
             </div>
           </Link>
         </div>
-        <NavMenu isHamburgerOpen={isHamburgerOpen} setIsHamburgerOpen={setIsHamburgerOpen}/>
-        <HamburgerMenu isOpen={isHamburgerOpen} setOpen={setIsHamburgerOpen}/>
+        <NavMenu
+          isHamburgerOpen={isHamburgerOpen}
+          setIsHamburgerOpen={setIsHamburgerOpen}
+        />
+        <HamburgerMenu isOpen={isHamburgerOpen} setOpen={setIsHamburgerOpen} />
       </HeaderWrapper>
     </ThemeProvider>
-  )
+  );
 };
 
 export default Header;

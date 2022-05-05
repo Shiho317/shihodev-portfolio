@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 const WagaraSvg = () => {
-
   return (
     <svg
       width="100%"
