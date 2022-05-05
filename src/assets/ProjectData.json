@@ -1,18 +1,18 @@
 {
   "projects": [
     {
-      "title": "DOUGHING",
+      "title": "SUKI SUSHI",
       "type": ["application", "solo project"],
-      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647719804/ShihoDev-Portfolio/doughing_m1cfuy.jpg",
-      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647649951/ShihoDev-Portfolio/doughing_gjioyr.gif",
-      "url": "https://doughing.vercel.app/",
-      "github": "https://github.com/Shiho317/DOUGHING",
-      "skills": ["react", "typescript", "css", "firebase"],
+      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1651721295/ShihoDev-Portfolio/suki-sushi_nglb0d.jpg",
+      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1651721233/ShihoDev-Portfolio/suki-sushi_awivsg.gif",
+      "url": "https://cryptic-oasis-17891.herokuapp.com/",
+      "github": "https://github.com/Shiho317/Sushi-app",
+      "skills": ["react", "node.js", "express.js", "css", "graphql", "apollo", "mongodb"],
       "descriptions": [
-        "Pizza online order application that is built with React and Typescript.", 
-        "Using firebase to manage user authentication and order details.", 
-        "All pizza ingredients and logo is created by myself with using Inkscape and Figma.", 
-        "Using framer motion to make effective animation."
+        "Map application which provides location of sushi restaurant in Vancouver, CA.", 
+        "Using graphQL and Apollo to fetch Yelp API for datas about sushi restaurants.", 
+        "Click a pin to see a restaurant detail and add to your favourite.", 
+        "Using MongoDB to store database for account and favourite restaurants."
       ]
     },
     {
