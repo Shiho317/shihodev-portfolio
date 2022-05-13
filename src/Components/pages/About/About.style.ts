@@ -23,6 +23,10 @@ export const AboutLeft = styled.div`
   align-items: center;
   gap: 1.5rem;
 
+  @media ${(props) => props.theme.device.tablet} {
+    gap: 2rem;
+  }
+
   @media ${(props) => props.theme.device.laptop} {
     flex: 1;
     gap: 3rem;
@@ -61,6 +65,11 @@ export const SelfImg = styled.div`
   align-items: center;
   border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
 
+  @media ${(props) => props.theme.device.tablet} {
+    width: 10rem;
+    height: 10rem;
+  }
+
   @media ${(props) => props.theme.device.laptop} {
     width: 20rem;
     height: 20rem;
@@ -69,6 +78,10 @@ export const SelfImg = styled.div`
   & img {
     width: 7.5rem;
     transition: all 0.5s ease;
+
+    @media ${(props) => props.theme.device.tablet} {
+      width: 10rem;
+    }
 
     @media ${(props) => props.theme.device.laptop} {
       width: 20rem;
@@ -95,6 +108,10 @@ export const Introwrapper = styled.div`
   justify-content: center;
   gap: 1rem;
 
+  @media ${(props) => props.theme.device.tablet} {
+    gap: 2rem;
+  }
+
   @media ${(props) => props.theme.device.laptop} {
     align-items: start;
     gap: 1rem;
@@ -114,6 +131,10 @@ export const Introwrapper = styled.div`
     overflow: scroll;
     font-size: 0.8rem;
     color: ${(props) => props.theme.color.blue};
+
+    @media ${(props) => props.theme.device.tablet} {
+      height: 50%;
+    }
 
     @media ${(props) => props.theme.device.laptop} {
       height: 80%;
@@ -135,10 +156,14 @@ export const Button = styled.button`
   outline: none;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 
+  @media ${(props) => props.theme.device.tablet} {
+    margin: 2rem;
+  }
+
   @media ${(props) => props.theme.device.laptop} {
     width: 15rem;
     height: 3rem;
-    margin-bottom: 0rem;
+    margin: 1rem 0;
     font-size: 1.2rem;
   }
 

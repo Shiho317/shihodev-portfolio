@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Project = styled.div`
   width: 100%;
-  height: 65vh;
   margin: 0 auto;
   display: grid;
   border-bottom: 1px solid ${(props) => props.theme.color.grey};
+  padding: 1rem;
 
   @media ${(props) => props.theme.device.laptop} {
     display: flex;

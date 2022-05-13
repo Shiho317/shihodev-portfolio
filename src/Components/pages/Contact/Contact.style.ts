@@ -31,7 +31,15 @@ export const ContactTitles = styled.div`
   padding: 1rem;
   padding-top: 2.5rem;
 
+  @media ${(props) => props.theme.device.tablet} {
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+  }
+
   @media ${(props) => props.theme.device.laptop} {
+    height: 50%;
+    width: unset;
     padding-top: 0rem;
     gap: 1rem;
   }
@@ -50,6 +58,10 @@ export const ContactTitles = styled.div`
     & h1 {
       font-size: 2rem;
       color: ${(props) => props.theme.color.blue};
+
+      @media ${(props) => props.theme.device.tablet} {
+        font-size: 3rem;
+      }
 
       @media ${(props) => props.theme.device.laptop} {
         font-size: 4.5rem;

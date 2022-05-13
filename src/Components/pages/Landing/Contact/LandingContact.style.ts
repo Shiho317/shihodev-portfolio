@@ -73,7 +73,13 @@ export const ContactInput = styled.form`
   gap: 1.5rem;
   z-index: 2;
 
+  @media ${(props) => props.theme.device.tablet} {
+    gap: 2rem;
+    width: 50%;
+  }
+
   @media ${(props) => props.theme.device.laptop} {
+    width: 80%;
     gap: 2rem;
   }
 
@@ -124,6 +130,10 @@ export const SubmitButton = styled.button`
   cursor: pointer;
   outline: none;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+
+  @media ${(props) => props.theme.device.tablet} {
+    margin-bottom: 2rem;
+  }
 
   @media ${(props) => props.theme.device.laptop} {
     margin-bottom: 0;

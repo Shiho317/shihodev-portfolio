@@ -49,6 +49,10 @@ export const DetailsAboutMe = styled.div`
   & .about-me {
     color: ${(props) => props.theme.color.grey};
 
+    @media ${(props) => props.theme.device.tablet} {
+      width: 70%;
+    }
+
     & h3 {
       font-weight: 400;
       font-size: 1.1rem;
@@ -59,7 +63,7 @@ export const DetailsAboutMe = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 
     & h3 {
       background-color: ${(props) => props.theme.color.cream};
