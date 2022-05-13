@@ -11,6 +11,10 @@ export const SkillsWrapper = styled.div`
   gap: 0.3rem;
   font-size: 1rem;
 
+  @media ${(props) => props.theme.device.tablet} {
+    width: 50%;
+  }
+
   @media ${(props) => props.theme.device.laptop} {
     width: 70%;
     font-size: 3rem;
