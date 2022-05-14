@@ -25,6 +25,7 @@ export const Project = styled.div`
 `;
 
 export const Skill = styled.ul`
+  margin-top: 1rem;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -32,6 +33,7 @@ export const Skill = styled.ul`
   gap: 0.5rem;
 
   @media ${(props) => props.theme.device.laptop} {
+    margin-top: 0;
     flex-wrap: nowrap;
     gap: 1rem;
   }
