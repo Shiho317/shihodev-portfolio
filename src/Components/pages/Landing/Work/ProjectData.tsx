@@ -1,12 +1,13 @@
 import { NavHashLink } from "react-router-hash-link";
-import { ProjectDetails, ProjectIcon } from "./ProjectData.style";
-import { CgWebsite } from "react-icons/cg";
-import { AiOutlineAppstoreAdd } from "react-icons/ai";
+import {
+  ProjectContents,
+  ProjectDetails,
+  ProjectIcon,
+} from "./ProjectData.style";
 import { FiGithub, FiPaperclip } from "react-icons/fi";
 import { BiCommentDetail } from "react-icons/bi";
 
 type Props = {
-  isActive: number;
   index: number;
   project: {
     title: string;
@@ -18,61 +19,34 @@ type Props = {
     skills: string[];
     descriptions: string[];
   };
-  addActiveClass: (index: number) => void;
 };
 
-const ProjectData: React.FC<Props> = ({
-  project,
-  isActive,
-  index,
-  addActiveClass,
-}) => {
+const ProjectData: React.FC<Props> = ({ project, index }) => {
   return (
-    <div
-      key={index}
-      className={
-        index === isActive
-          ? "project active"
-          : index < isActive
-          ? "project prev"
-          : "project"
-      }
-      onClick={() => addActiveClass(index)}
-    >
-      <ProjectDetails>
-        <div className="project-img">
-          <img src={project.thumbnail} alt="project-img" />
-        </div>
-        <div className={index !== isActive ? "project-type" : "hidden"}>
-          <ProjectIcon>
-            {project.type[0] === "website" ? (
-              <CgWebsite />
-            ) : (
-              <AiOutlineAppstoreAdd />
-            )}
-          </ProjectIcon>
-        </div>
-        <div className={index === isActive ? "icons" : "hidden"}>
-          <ProjectIcon
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FiGithub />
-          </ProjectIcon>
-          <ProjectIcon
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FiPaperclip />
-          </ProjectIcon>
-          <NavHashLink className="work-icon" to={`/work#id-${index}`}>
-            <BiCommentDetail />
-          </NavHashLink>
-        </div>
-      </ProjectDetails>
-    </div>
+    <ProjectDetails>
+      <div className="project-img">
+        <img src={project.thumbnail} alt="project-img" />
+      </div>
+      <ProjectContents>
+        <ProjectIcon
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FiGithub />
+        </ProjectIcon>
+        <ProjectIcon
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FiPaperclip />
+        </ProjectIcon>
+        <NavHashLink className="work-icon" to={`/work#id-${index}`}>
+          <BiCommentDetail />
+        </NavHashLink>
+      </ProjectContents>
+    </ProjectDetails>
   );
 };
 
