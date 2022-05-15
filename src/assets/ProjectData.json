@@ -24,18 +24,18 @@
       ]
     },
     {
-      "title": "E-commerce website",
+      "title": "U Watch",
       "type": ["website", "solo project"],
-      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647651541/ShihoDev-Portfolio/ecommerce_w67eao.jpg",
-      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647649966/ShihoDev-Portfolio/ecommerce_xbuisn.gif",
-      "url": "https://sailfurniture-ecommerce-mixs4kfls-shiho317.vercel.app/",
-      "github": "https://github.com/Shiho317/ECapp-typescript",
-      "skills": ["react", "typescript", "styled-components", "material-ui"],
+      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1652636309/ShihoDev-Portfolio/uwatch-thumbnail_rx9m47.jpg",
+      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1652636330/ShihoDev-Portfolio/uwatch_serzwt.gif",
+      "url": "https://u-watch-bfkglbnr0-shiho317.vercel.app/",
+      "github": "https://github.com/Shiho317/Watch-online",
+      "skills": ["react", "redux", "scss", "material-ui", "firebase"],
       "descriptions": [
-        "E-Commerce website that is built with React and Typescript.",
-        "Created json file to storage items and users.",
-        "Created shopping cart modal which shows you items that are in your cart and total cost.",
-        "Used styled-component and Material UI for styling."
+        "Watch e-commerce website used redux toolkit to manage item data in user cart.",
+        "Item stock amount will be decreased when you order completely.",
+        "Able to search by keyword of company name or item name.",
+        "Used firebase firestore to store item data and user ordering data, customer support data."
       ]
     },
     {
