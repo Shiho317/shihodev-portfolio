@@ -29,6 +29,7 @@ export const Projects = styled.div`
   }
 
   @media ${(props) => props.theme.device.laptop} {
+    padding: 2rem;
     height: 25rem;
   }
 `;

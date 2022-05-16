@@ -26,9 +26,9 @@
     {
       "title": "U Watch",
       "type": ["website", "solo project"],
-      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1652636309/ShihoDev-Portfolio/uwatch-thumbnail_rx9m47.jpg",
-      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1652636330/ShihoDev-Portfolio/uwatch_serzwt.gif",
-      "url": "https://u-watch-bfkglbnr0-shiho317.vercel.app/",
+      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1652667528/ShihoDev-Portfolio/uwatch-thumbnail_nouieb.jpg",
+      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1652668326/ShihoDev-Portfolio/uwatch-gif_xkkbyi.gif",
+      "url": "https://u-watch.vercel.app/",
       "github": "https://github.com/Shiho317/Watch-online",
       "skills": ["react", "redux", "scss", "material-ui", "firebase"],
       "descriptions": [

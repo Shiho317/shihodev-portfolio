@@ -11,6 +11,11 @@ export const ProjectDetails = styled.div`
   @media ${(props) => props.theme.device.laptop} {
     width: 30rem;
     height: 15rem;
+
+    &:hover{
+      transform: scale(1.1);
+      transition: all 0.3s ease;
+    }
   }
 
   & .project-img {

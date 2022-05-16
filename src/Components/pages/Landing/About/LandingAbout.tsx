@@ -13,13 +13,12 @@ const LandingAbout = () => {
       </NameTitle>
       <DetailsAboutMe>
         <div className="about-me">
-          <h3>Hi. I'm a Front-end Developer.</h3>
+          <h3>Hi. I'm a front-end developer who is highly skilled at web programming and designing.</h3>
           <h3>
-            Web programming and designing give me opportunities to learn,
-            rewarding and joyful.
+            I have vast experiences and specialization in React.
           </h3>
           <h3>
-            I am looking for opportunities to work as a front-end developer.
+            I am looking for opportunities to learn and improve my skills.
           </h3>
         </div>
         <div className="to-about-btn">
