@@ -17,7 +17,7 @@
         "mongodb"
       ],
       "descriptions": [
-        "Map application which provides location of sushi restaurant in Vancouver, CA.",
+        "Map application which provides location of sushi restaurants in Vancouver, CA.",
         "Using graphQL and Apollo to fetch Yelp API for datas about sushi restaurants.",
         "Click a pin to see a restaurant detail and add to your favourite.",
         "Using MongoDB to store database for account and favourite restaurants."
@@ -91,10 +91,10 @@
       "github": "https://github.com/Shiho317/shihodev-portfolio",
       "skills": ["react", "typescript", "styled-components", "framer-motion"],
       "descriptions": [
-        "A portfolio website that produce myself and showing my project.",
+        "A portfolio website that produces myself and shows my project.",
         "Created design all by myself and made all logos and images by using Inkscape and Figma.",
         "Used framer-motion to make images or logos efficiently and impressively.",
-        "Created contact form that make user can contact me from website and provide them auto reply."
+        "Created contact form that makes users contact me from the website and provide them auto reply."
       ]
     }
   ]
