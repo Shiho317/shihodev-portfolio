@@ -39,6 +39,27 @@
       ]
     },
     {
+      "title": "Trello Board",
+      "type": ["application", "solo project"],
+      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1653542887/ShihoDev-Portfolio/trello-board_vb0s24.jpg",
+      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1653542905/ShihoDev-Portfolio/trello-board_qlccui.gif",
+      "url": "https://dry-brushlands-20144.herokuapp.com/",
+      "github": "https://github.com/Shiho317/Trello",
+      "skills": [
+        "react",
+        "node.js",
+        "express.js",
+        "mongodb",
+        "styled-components"
+      ],
+      "descriptions": [
+        "Trello board which manages tasks and collaborative work.",
+        "Using node.js and express.js for managing data on the server side.",
+        "Able to drag and drop task cards.",
+        "Using MongoDB to store databases for accounts and tasks."
+      ]
+    },
+    {
       "title": "Weather app",
       "type": ["application", "solo project"],
       "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647651576/ShihoDev-Portfolio/weatherapp_zkual3.jpg",
@@ -65,21 +86,6 @@
         "Created web design based on his request and his favourite.",
         "Used Cloudinary for storage data and used Emailjs for receiving, sending auto reply.",
         "Created json file for making it easy to upload his new audio file."
-      ]
-    },
-    {
-      "title": "Exchanger",
-      "type": ["application", "solo project"],
-      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1648944827/ShihoDev-Portfolio/exchangerApp_urn75a.jpg",
-      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1648944839/ShihoDev-Portfolio/exchangerApp_thmymm.gif",
-      "url": "https://exchanger-opal.vercel.app/",
-      "github": "https://github.com/Shiho317/Exchanger",
-      "skills": ["react", "css", "exchange rates API", "chartjs"],
-      "descriptions": [
-        "Exchange currency calculator application that provides foreign exchange rates.",
-        "Able to check weekly changes of chosen rates.",
-        "Able to check all foreign exchange currency and show change percentage between yesterday.",
-        "Part of challenge is managing API data."
       ]
     },
     {
