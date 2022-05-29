@@ -1,4 +1,4 @@
-import { NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 import {
   ProjectContents,
   ProjectDetails,
@@ -42,9 +42,9 @@ const ProjectData: React.FC<Props> = ({ project, index }) => {
         >
           <FiPaperclip />
         </ProjectIcon>
-        <NavHashLink className="work-icon" to={`/work#id-${index}`}>
+        <HashLink className="work-icon" to={`/work#id-${index}`}>
           <BiCommentDetail />
-        </NavHashLink>
+        </HashLink>
       </ProjectContents>
     </ProjectDetails>
   );
