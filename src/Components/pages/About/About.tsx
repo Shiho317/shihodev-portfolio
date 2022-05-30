@@ -55,7 +55,7 @@ const About = () => {
                 <br />
                 When working on team projects I always strive to improve the
                 overall objectives. I share my thoughts about how design and
-                functionality can be improved. I keep contant communication with
+                functionality can be improved. I keep constant communication with
                 all team members throughout projects ensuring everyone is up to
                 date on the overrall progress and status and that the objectives
                 are clear to everyone. I always provide assistance wherever
