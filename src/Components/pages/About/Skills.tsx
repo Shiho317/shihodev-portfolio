@@ -1,4 +1,5 @@
 import { Skill, SkillsWrapper } from "./Skills.style";
+import { GrMysql } from "react-icons/gr";
 import {
   DiHtml5,
   DiCss3,
@@ -81,6 +82,10 @@ const Skills = () => {
       <Skill>
         <p>graphQL</p>
         <SiGraphql />
+      </Skill>
+      <Skill>
+        <p>MySQL</p>
+        <GrMysql />
       </Skill>
       <Skill>
         <p>Apollo</p>
