@@ -26,6 +26,7 @@ import {
   SiGit,
   SiGraphql,
   SiApollographql,
+  SiPostgresql
 } from "react-icons/si";
 
 const Skills = () => {
@@ -86,6 +87,10 @@ const Skills = () => {
       <Skill>
         <p>MySQL</p>
         <GrMysql />
+      </Skill>
+      <Skill>
+        <p>PostgreSQL</p>
+        <SiPostgresql />
       </Skill>
       <Skill>
         <p>Apollo</p>
