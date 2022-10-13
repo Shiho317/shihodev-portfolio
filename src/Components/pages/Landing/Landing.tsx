@@ -17,6 +17,7 @@ const Landing = () => {
     }, 6000);
   }, []);
 
+
   return (
     <ThemeProvider theme={theme}>
       <InitialMotion showInitialMotion={showInitialMotion} />
