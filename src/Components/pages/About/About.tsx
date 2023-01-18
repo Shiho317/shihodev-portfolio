@@ -27,7 +27,7 @@ const About = () => {
             </div>
             <SelfImg>
               <img
-                src="https://res.cloudinary.com/dasmbsqsx/image/upload/v1649434862/ShihoDev-Portfolio/shiho-selfimg_zhmulj.jpg"
+                src="https://res.cloudinary.com/dasmbsqsx/image/upload/v1674080105/ShihoDev-Portfolio/shiho-nagano_tyvzk9.jpg"
                 alt="self-img"
               />
             </SelfImg>

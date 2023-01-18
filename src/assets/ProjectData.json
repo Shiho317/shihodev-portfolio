@@ -39,27 +39,6 @@
       ]
     },
     {
-      "title": "Trello Board",
-      "type": ["application", "solo project"],
-      "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1653542887/ShihoDev-Portfolio/trello-board_vb0s24.jpg",
-      "gif": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1653542905/ShihoDev-Portfolio/trello-board_qlccui.gif",
-      "url": "https://dry-brushlands-20144.herokuapp.com/",
-      "github": "https://github.com/Shiho317/Trello",
-      "skills": [
-        "react",
-        "node.js",
-        "express.js",
-        "mongodb",
-        "styled-components"
-      ],
-      "descriptions": [
-        "Trello board which manages tasks and collaborative work.",
-        "Using node.js and express.js for managing data on the server side.",
-        "Able to drag and drop task cards.",
-        "Using MongoDB to store databases for accounts and tasks."
-      ]
-    },
-    {
       "title": "Weather app",
       "type": ["application", "solo project"],
       "thumbnail": "https://res.cloudinary.com/dasmbsqsx/image/upload/v1647651576/ShihoDev-Portfolio/weatherapp_zkual3.jpg",
