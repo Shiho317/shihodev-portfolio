@@ -7,6 +7,7 @@ import {
   DiSass,
   DiJavascript1,
   DiReact,
+  DiWordpress
 } from "react-icons/di";
 import {
   SiRedux,
@@ -20,9 +21,8 @@ import {
   SiStyledcomponents,
   SiFirebase,
   SiMongodb,
-  SiFramer,
   SiFigma,
-  SiInkscape,
+  SiAmazonaws,
   SiGit,
   SiGraphql,
   SiApollographql,
@@ -117,16 +117,16 @@ const Skills = () => {
         <SiMongodb />
       </Skill>
       <Skill>
-        <p>Framer-motion</p>
-        <SiFramer />
+        <p>AWS</p>
+        <SiAmazonaws />
+      </Skill>
+      <Skill>
+        <p>WordPress</p>
+        <DiWordpress />
       </Skill>
       <Skill>
         <p>Figma</p>
         <SiFigma />
-      </Skill>
-      <Skill>
-        <p>Inkscape</p>
-        <SiInkscape />
       </Skill>
       <Skill>
         <p>Git/GitHub</p>
