@@ -37,7 +37,7 @@ const About = () => {
             <Introwrapper>
               <h3>&ldquo; I am Shiho Nagano. &rdquo;</h3>
               <p>
-                I am a front-end developer with an immense passion for
+                I am a full-stack developer with an immense passion for
                 programming and designing web sites and applications. I am a
                 reliable, hard working, self motivated individual who works well
                 with others.

@@ -8,12 +8,12 @@ const LandingAbout = () => {
         <h1>
           Shiho Nagano,
           <br />
-          Front-end Developer
+          Full Stack Developer
         </h1>
       </NameTitle>
       <DetailsAboutMe>
         <div className="about-me">
-          <h3>Hi. I'm a front-end developer who is highly skilled at web programming and designing.</h3>
+          <h3>Hi. I'm a full-stack developer who is highly skilled at web programming and designing.</h3>
           <h3>
             I have vast experiences and specialization in React.
           </h3>
