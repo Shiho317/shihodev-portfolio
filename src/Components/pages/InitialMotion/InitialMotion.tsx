@@ -70,7 +70,7 @@ const InitialMotion: React.FC<Props> = ({ showInitialMotion }) => {
               animate={{ x: 100, opacity: 1 }}
               transition={{ duration: 1, delay: 5, ease: "easeInOut" }}
             >
-              A FRONT-END DEVELOPER
+              A FULLSTACK DEVELOPER
             </motion.h1>
           </AnimatedTitle>
         </MyTitle>
