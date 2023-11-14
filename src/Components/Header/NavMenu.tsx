@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Icons, NavButton, ShownButton } from "./NavMenu.style";
 import { SiDiscord } from "react-icons/si";
 import { FiLinkedin, FiGithub, FiMail } from "react-icons/fi";
-import { MdSaveAlt } from "react-icons/md";
+// import { MdSaveAlt } from "react-icons/md";
 
 type Props = {
   isHamburgerOpen: boolean;
@@ -28,7 +28,7 @@ const NavMenu: React.FC<Props> = ({ isHamburgerOpen, setIsHamburgerOpen }) => {
           <li onClick={() => setIsHamburgerOpen(false)}>
             <Link to="/contact">contact</Link>
           </li>
-          <li onClick={() => setIsHamburgerOpen(false)}>
+          {/* <li onClick={() => setIsHamburgerOpen(false)}>
             <a
               href="ShihoNagano-Résumé.pdf"
               download="ShihoNagano-Résumé.pdf"
@@ -37,7 +37,7 @@ const NavMenu: React.FC<Props> = ({ isHamburgerOpen, setIsHamburgerOpen }) => {
               resume
               <MdSaveAlt />
             </a>
-          </li>
+          </li> */}
         </ul>
       </NavButton>
       <Icons>
